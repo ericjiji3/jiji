@@ -6,9 +6,9 @@ import southcloud from './images/projects/southcloud.jpg';
 import mahone from './images/projects/mahone.jpg';
 import speech from './images/speechBubble.png';
 
-function Projects() {
+function Projects({reference, onClick}) {
     return (
-        <div className="projects-container">
+        <div className="projects-container" ref={reference}>
             <h2 className="header">Work</h2>
             <div className="project1">
                 <div className="speech-bubble">
@@ -30,7 +30,7 @@ function Projects() {
                 <div className="speech-bubble">
                     <img src={speech}/>
                     <span>
-                        360Connect
+                        360 Connect
                     </span>
                 </div>
             </div>

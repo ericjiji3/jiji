@@ -6,9 +6,9 @@ import map from './images/icons/map.png';
 import phone from './images/icons/phone.png';
 
 
-function Contact() {
+function Contact({reference, onClick}) {
     return (
-        <div className="contact-container">
+        <div className="contact-container" ref={reference}>
             <div className="header-image">
                 <div className='header-container'>
                     <h2>Lets Get to Work</h2>
@@ -22,19 +22,19 @@ function Contact() {
                         <span>Full Name</span>
                         <input type="text" name="name" />
                     </label>
-                    <label className="name-input">
+                    <label className="company-input">
                         <span>Company</span>
                         <input type="text" name="name" />
                     </label>
-                    <label className="name-input">
+                    <label className="phone-input">
                         <span>Phone</span>
                         <input type="text" name="name" />
                     </label>
-                        <label className="name-input">
+                        <label className="email-input">
                     <span>Email</span>
                         <input type="text" name="name" />
                     </label>
-                    <label className="name-input">
+                    <label className="message-input">
                         <span>Message</span>
                         <textarea
                             value=""

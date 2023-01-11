@@ -56,3 +56,48 @@
     position: absolute;
     right: 1%;
 }
+@media(max-width: 1400px){
+    .home-container{
+        padding: 120px 150px 125px;
+    }
+    .home-container .column1 .heading{
+        padding: 15px 0 25px;
+    }
+    .home-container .column2 img{
+        width: 500px;
+        position: absolute;
+        right: -10%;
+    }
+    .home-container .column1 .heading .name{
+        font-size: 25px;
+        margin: 0 0 5px;
+    }
+    .home-container .column1 .heading .job{
+        font-size: 40px;
+        margin: 0 0 5px;
+    }
+    .home-container .column1 .heading .job-description{
+        font-size: 15px;
+        margin: 0;
+    }
+}
+@media(max-width: 1200px){
+    .home-container .column1 .heading{
+        margin-right: 75px;
+    }
+    .home-container .column1 .heading .name{
+        font-size: 20px;
+    }
+    .home-container .column1 .heading .job{
+        font-size: 30px;
+    }
+    .home-container .column1 .heading .job-description{
+        font-size: 12px;
+    }
+    .home-container .column1 .buttons{
+        font-size: 12px;
+    }
+    .home-container .column1 .socials a img{
+        width: 25px;
+    }
+}

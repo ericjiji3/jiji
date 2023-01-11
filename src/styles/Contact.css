@@ -1,5 +1,5 @@
 .contact-container{
-    padding: 0 150px;
+    padding: 100px 150px;
     background-color: #0C0F11;
     display: flex;
 }
@@ -8,7 +8,7 @@
     flex: 40%;
 }
 .contact-container .header-image .header-container{
-    
+    padding-right: 10px;
 }
 .contact-container .header-image .header-container h2{
     font-size: 46px;
@@ -111,4 +111,107 @@
 }
 .contact-container .form-container .contact-icons .mail-container img{
     padding-right: 5px;
+}
+@media(max-width: 1400px){
+    .contact-container{
+        padding: 75px 150px;
+    }
+    .contact-container .header-image .header-container h2{
+        font-size: 40px;
+    }
+    .contact-container .header-image .header-container h3{
+        font-size: 15px;
+    }
+    .contact-container .form-container .form{
+        margin: 10px;
+        padding: 20px 30px;
+    }
+    .contact-container .form-container .form label{
+        flex: 100%;
+        margin: 5px 0;
+    }
+    .contact-container .form-container .form label span{
+        font-size: 12px;
+    }
+    .contact-container .form-container .form .name-input{
+        flex: 45%;
+        margin: 5px 5px 15px 0;
+    }
+    .contact-container .form-container .form .company-input{
+        flex: 45%;
+        margin-left: 5px;
+    }
+    .contact-container .form-container .form label textarea{
+        height: 50px;
+    }
+    .contact-container .form-container .form .submit-butt{
+        padding: 15px 20px;
+        background-color: #0C0F11;
+        color: #FBFBFB;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .contact-container .form-container .contact-icons{
+        margin: 10px;
+        padding: 20px 30px;
+    }
+    .contact-container .form-container .contact-icons span{
+        font-size: 12px;
+    }
+    .contact-container .form-container .contact-icons .phone-container{
+        padding: 10px 15px;
+    }
+    .contact-container .form-container .contact-icons .phone-container img{
+        width: 22.5px;
+    }
+    .contact-container .form-container .contact-icons .map-container{
+        padding: 10px 15px;
+    }
+    .contact-container .form-container .contact-icons .map-container img{
+        width: 22.5px;
+    }
+    .contact-container .form-container .contact-icons .mail-container{
+        padding: 10px 15px;
+    }
+    .contact-container .form-container .contact-icons .mail-container img{
+        width: 22.5px;
+    }
+}
+@media(max-width: 1200px){
+    .contact-container .header-image .header-container h2{
+        font-size: 30px;
+    }
+    .contact-container .header-image .header-container h3{
+        font-size: 12px;
+    }
+    .contact-container .form-container .form label{
+        margin: 5px 0;
+    }
+    .contact-container .form-container .form label span{
+        font-size: 10px;
+    }
+    .contact-container .form-container .form .name-input{
+        margin: 5px 5px 10px 0;
+    }
+    .contact-container .form-container .contact-icons span{
+        font-size: 10px;
+    }
+    .contact-container .form-container .contact-icons .phone-container{
+        padding: 10px 10px;
+    }
+    .contact-container .form-container .contact-icons .phone-container img{
+        width: 22.5px;
+    }
+    .contact-container .form-container .contact-icons .map-container{
+        padding: 10px 10px;
+    }
+    .contact-container .form-container .contact-icons .map-container img{
+        width: 22.5px;
+    }
+    .contact-container .form-container .contact-icons .mail-container{
+        padding: 10px 10px;
+    }
+    .contact-container .form-container .contact-icons .mail-container img{
+        width: 22.5px;
+    }
 }

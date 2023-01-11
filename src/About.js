@@ -2,9 +2,9 @@ import './styles/About.css';
 import React, {useEffect, useState} from 'react';
 import p2pic from './images/p2pic.png';
 
-function About() {
+function About({reference, onClick}) {
     return (
-        <div className="about-container">
+        <div className="about-container" ref={reference}>
             <div className="image-container">
                 <img src={p2pic}/>
             </div>

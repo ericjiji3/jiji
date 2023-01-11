@@ -1,5 +1,5 @@
 .projects-container{
-    padding: 0 150px 50px;
+    padding: 100px 150px;
     display: flex;
     border: 5px solid #0C0F11;
     text-align: center;
@@ -120,7 +120,7 @@
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
     border: 5px solid #0C0F11;
-    margin: 0px 0px 20px 10px;
+    margin: 0px 0px 20px 0px;
 }
 .projects-container .project4:hover{
     -webkit-filter: grayscale(0%); 
@@ -142,4 +142,94 @@
     top: 41%;
     text-align: center;
     font-size: 12px;
+}
+@media(max-width: 1400px){
+    .projects-container{
+        padding: 75px 150px;
+    }
+    .projects-container .header{
+        font-size: 40px;
+    }
+    .projects-container .project1{
+        height: 150px;
+        background-position: 75% 75%;
+    }
+    .projects-container .project1 .speech-bubble{
+        width: 100px;
+        position: absolute;
+        top: 35%;
+        right: 60%;
+    }
+    .projects-container .project1 .speech-bubble img{
+        width: 100px;
+    }
+    .projects-container .project1 .speech-bubble span{
+        position: absolute;
+        width: 100px;
+        right: 1%;
+        top: 41%;
+        text-align: center;
+        font-size: 10px;
+    }
+    .projects-container .project2{
+        height: 150px;
+    }
+    .projects-container .project2 .speech-bubble{
+        width: 150px;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+    }
+    .projects-container .project2 .speech-bubble img{
+        width: 150px;
+    }
+    .projects-container .project2 .speech-bubble span{
+        position: absolute;
+        width: 150px;
+        right: 1%;
+        top: 41%;
+        text-align: center;
+        font-size: 10px;
+    }
+    .projects-container .project3{
+        height: 150px;
+    }
+    .projects-container .project3 .speech-bubble{
+        width: 110px;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+    }
+    .projects-container .project3 .speech-bubble img{
+        width: 110px;
+    }
+    .projects-container .project3 .speech-bubble span{
+        position: absolute;
+        width: 80px;
+        right: 13%;
+        top: 35%;
+        text-align: center;
+        font-size: 10px;
+    }
+    .projects-container .project4{
+        height: 150px;
+        background-position: 75% 25%;
+    }
+    .projects-container .project4 .speech-bubble{
+        width: 175px;
+        position: absolute;
+        top: 2.5%;
+        right: 35%;
+    }
+    .projects-container .project4 .speech-bubble img{
+        width: 175px;
+    }
+    .projects-container .project4 .speech-bubble span{
+        position: absolute;
+        width: 100px;
+        right: 22.5%;
+        top: 40%;
+        text-align: center;
+        font-size: 10px;
+    }
 }

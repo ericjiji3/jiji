@@ -4,9 +4,14 @@
 }
 .about-container .image-container{
     flex: 70%;
+
 }
 .about-container .image-container img{
-    width: 100%;
+    width: 85%;
+    top: 2%;
+    left: 5%;
+    position: relative;
+    margin-bottom: 125px;
 }
 .about-container .bio{
     flex: 30%;
@@ -16,8 +21,29 @@
 }
 .about-container .bio h2{
     font-size: 46px;
-    margin: 50px 0;
+    margin: 150px 0 15px 0;
 }
-.about-container .bio span{
+.about-container .bio p{
     font-size: 16px;
+}
+@media(max-width: 1400px){
+    .about-container .image-container img{
+        top: 10%;
+    }
+    .about-container .bio h2{
+        font-size: 40px;
+        margin: 125px 0 15px 0;
+    }
+    .about-container .bio p{
+        font-size: 12px;
+    }
+}
+@media(max-width: 1200px){
+    .about-container .bio h2{
+        font-size: 30px;
+        margin: 125px 0 15px 0;
+    }
+    .about-container .bio p{
+        font-size: 10px;
+    }
 }
