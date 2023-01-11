@@ -233,3 +233,16 @@
         font-size: 10px;
     }
 }
+@media(max-width: 1200px){
+    .projects-container .header{
+        font-size: 30px;
+    }
+}
+@media(max-width: 1000px){
+    .projects-container{
+        padding: 100px;
+    }
+    .projects-container .header{
+        margin: 0 0 50px 0;
+    }
+}

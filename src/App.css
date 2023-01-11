@@ -44,7 +44,14 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+@media(max-width: 1000px){
+  .navbar-container .tab-container .tabs{
+    font-size: 12px;
+  }
+  .navbar-container .initials-container img{
+    width: 75px!important;
+  }
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

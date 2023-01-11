@@ -12,7 +12,7 @@ function Home({reference, click}) {
             <div className="column1">
                 <div className="heading">
                     <h3 className="name">ERIC JI</h3>
-                    <h2 className="job">FREELANCE WEB DEVELOPER</h2>
+                    <h2 className="job">WEB DEVELOPER</h2>
                     <h3 className="job-description">Helping people turn their ideas and businesses into cool websites that work.</h3>
                 </div>
                 <div className="buttons">

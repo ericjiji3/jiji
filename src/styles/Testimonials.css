@@ -17,3 +17,12 @@
         margin: 100px 0 0px 0;
     }
 }
+@media(max-width: 850px){
+    .testimonials-container{
+        margin: 55px 0 0px 0;
+    }
+    .testimonials-container .testimonial{
+        font-size: 12px;
+        padding: 30px 0;
+    }
+}

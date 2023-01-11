@@ -215,3 +215,14 @@
         width: 22.5px;
     }
 }
+@media(max-width: 1000px){
+    .contact-container{
+        padding: 100px 100px;
+    }   
+    .contact-container .header-image .header-container h2{
+        margin: 10px 0 5px 0;
+    }
+    .contact-container .form-container{
+        margin: 10px 0;
+    }
+}
