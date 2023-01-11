@@ -1,0 +1,23 @@
+.about-container{
+    padding: 0 150px;
+    display: flex;
+}
+.about-container .image-container{
+    flex: 70%;
+}
+.about-container .image-container img{
+    width: 100%;
+}
+.about-container .bio{
+    flex: 30%;
+    background-color: #0C0F11;
+    color: #FBFBFB;
+    padding: 0 25px;
+}
+.about-container .bio h2{
+    font-size: 46px;
+    margin: 50px 0;
+}
+.about-container .bio span{
+    font-size: 16px;
+}

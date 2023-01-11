@@ -1,0 +1,58 @@
+.home-container{
+    padding: 150px 150px 125px;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, #0C0F11 60%, #FBFBFB 40%);
+}
+.home-container .column1{
+    flex: 60%;
+}
+.home-container .column1 .heading{
+    text-align: left;
+    color: #FBFBFB;
+    padding: 15px 0 150px;
+}
+.home-container .column1 .heading .name{
+    font-size: 30px;
+    margin: 0 0 5px;
+}
+.home-container .column1 .heading .job{
+    font-size: 46px;
+    margin: 0 0 5px;
+}
+.home-container .column1 .heading .job-description{
+    font-size: 20px;
+    margin: 0;
+}
+.home-container .column1 .buttons{
+    text-align: left;
+    
+}
+.home-container .column1 .buttons .button-container .button{
+    display: block;
+    text-align: left;
+    color: #0C0F11;
+    background-color: #FBFBFB;
+    padding: 20px 10px;
+    width: 40%;
+    margin: 30px 0;
+}
+.home-container .column1 .socials{
+    display: flex;
+}
+.home-container .column1 .socials .twitter{
+    padding: 0 2.5px 0 0;
+}
+.home-container .column1 .socials .github, .socials .linkedin{
+    padding: 0 2.5px;
+}
+.home-container .column2{
+    flex: 40%;
+    position: relative;
+    overflow: visible;
+}
+.home-container .column2 img{
+    width: 600px;
+    position: absolute;
+    right: 1%;
+}

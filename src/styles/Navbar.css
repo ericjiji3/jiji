@@ -1,0 +1,29 @@
+.navbar-container{
+    position: fixed;
+    top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin: 0 150px;
+    background-color: #0C0F11;
+    border-radius: 100px;
+    border: 3px solid #FBFBFB;
+    width: 1300px;
+    z-index: 2;
+}
+.navbar-container .initials-container img{
+    width: 100px;
+    padding-left: 30px;
+}
+.navbar-container .tab-container .tabs{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    margin: 0;
+}
+.navbar-container .tab-container .tabs .tab{
+    padding: 10px 12px;
+    color: #FBFBFB;
+}

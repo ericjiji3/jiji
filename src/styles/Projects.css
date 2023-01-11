@@ -1,0 +1,145 @@
+.projects-container{
+    padding: 0 150px 50px;
+    display: flex;
+    border: 5px solid #0C0F11;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.projects-container .header{
+    flex: 100%;
+    font-size: 46px;
+    text-align: left;
+    margin: 50px 0;
+}
+.projects-container .project1{
+    height: 350px;
+    width: 100%;
+    flex: 25%;
+    background-image: url('../images/projects/jordon.jpeg');
+    background-size: cover;
+    background-position: 75% 50%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    border: 5px solid #0C0F11;
+    margin: 0px 10px 20px 0;
+}
+.projects-container .project1:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+.projects-container .project1 .speech-bubble{
+    width: 180px;
+    position: absolute;
+    top: 1%;
+    right: 40%;
+}
+.projects-container .project1 .speech-bubble img{
+    width: 180px;
+}
+.projects-container .project1 .speech-bubble span{
+    position: absolute;
+    width: 180px;
+    right: 2%;
+    top: 45%;
+    text-align: center;
+    font-size: 12px;
+}
+.projects-container .project2{
+    height: 350px;
+    flex: 45%;
+    width: 100%;
+    background-image: url('../images/projects/southcloud.jpg');
+    background-size: cover;
+    background-position: 75% 50%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    border: 5px solid #0C0F11;
+    margin: 0px 10px 20px;
+}
+.projects-container .project2:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+.projects-container .project2 .speech-bubble{
+    width: 185px;
+    position: absolute;
+    top: 54%;
+    right: 2%;
+}
+.projects-container .project2 .speech-bubble img{
+    width: 185px;
+}
+.projects-container .project2 .speech-bubble span{
+    position: absolute;
+    width: 160px;
+    right: 8%;
+    top: 42%;
+    text-align: center;
+    font-size: 12px;
+}
+.projects-container .project3{
+    height: 350px;
+    flex: 20%;
+    width: 100%;
+    background-image: url('../images/projects/360connect.jpg');
+    background-size: cover;
+    background-position: 75% 50%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    border: 5px solid #0C0F11;
+    margin: 0px 0px 20px 10px;
+}
+.projects-container .project3:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+.projects-container .project3 .speech-bubble{
+    width: 190px;
+    position: absolute;
+    top: 25%;
+    right: 30%;
+}
+.projects-container .project3 .speech-bubble img{
+    width: 190px;
+}
+.projects-container .project3 .speech-bubble span{
+    position: absolute;
+    width: 190px;
+    right: 0%;
+    top: 46%;
+    text-align: center;
+    font-size: 12px;
+}
+.projects-container .project4{
+    height: 350px;
+    flex: 20%;
+    width: 100%;
+    background-image: url('../images/projects/mahone.jpg');
+    background-size: cover;
+    background-position: 75% 35%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    border: 5px solid #0C0F11;
+    margin: 0px 0px 20px 10px;
+}
+.projects-container .project4:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+.projects-container .project4 .speech-bubble{
+    width: 180px;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+.projects-container .project4 .speech-bubble img{
+    width: 180px;
+}
+.projects-container .project4 .speech-bubble span{
+    position: absolute;
+    width: 130px;
+    right: 15%;
+    top: 41%;
+    text-align: center;
+    font-size: 12px;
+}

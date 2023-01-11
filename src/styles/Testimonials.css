@@ -1,0 +1,14 @@
+.testimonials-container{
+    display: block;
+    width: 100%;
+    background-color: #FBFBFB;
+    border: 7.5px solid #0C0F11;
+    border-radius: 45px;
+    margin: 30px 0 0px 0;
+}
+.testimonials-container .testimonial{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 75px 0;
+}

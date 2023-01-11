@@ -1,0 +1,114 @@
+.contact-container{
+    padding: 0 150px;
+    background-color: #0C0F11;
+    display: flex;
+}
+.contact-container .header-image{
+    color: #FBFBFB;
+    flex: 40%;
+}
+.contact-container .header-image .header-container{
+    
+}
+.contact-container .header-image .header-container h2{
+    font-size: 46px;
+    margin: 50px 0 5px 0;
+}
+.contact-container .header-image .header-container h3{
+    font-size: 20px;
+    margin: 0;
+}
+.contact-container .header-image img{
+    width: 100%;
+    position: relative;
+    left: 20%;
+}
+.contact-container .form-container{
+    flex: 60%;
+    color: #0C0F11;
+    background-color: #FBFBFB;
+    margin: 50px 0;
+}
+.contact-container .form-container .form{
+    border: 5px solid #0C0F11;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+    justify-content: center;
+}
+.contact-container .form-container .form label{
+    flex: 100%;
+    margin: 15px 0;
+}
+.contact-container .form-container .form .name-input{
+    margin-top: 0;
+}
+.contact-container .form-container .form label span{
+    display: block;
+    margin-bottom: 2px;
+}
+.contact-container .form-container .form label input{
+    width: 99%;
+}
+.contact-container .form-container .form label textarea{
+    width: 99%;
+    height: 100px;
+}
+.contact-container .form-container .form .submit-butt{
+    padding: 20px 40px;
+    background-color: #0C0F11;
+    color: #FBFBFB;
+    margin-top: 15px;
+}
+.contact-container .form-container .contact-icons{
+    border: 5px solid #0C0F11;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+    color: #FBFBFB;
+}
+.contact-container .form-container .contact-icons .phone-container{
+    flex: 30%;
+    text-align: center;
+    background-color: #0C0F11;
+    padding: 25px 40px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+.contact-container .form-container .contact-icons .phone-container img{
+    padding-right: 5px;
+}
+.contact-container .form-container .contact-icons .map-container{
+    flex: 30%;
+    text-align: center;
+    padding: 25px 40px;
+    background-color: #0C0F11;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+.contact-container .form-container .contact-icons .map-container img{
+    padding-right: 5px;
+}
+.contact-container .form-container .contact-icons .mail-container{
+    flex: 100%;
+    text-align: center;
+    padding: 25px 40px;
+    background-color: #0C0F11;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+.contact-container .form-container .contact-icons .mail-container img{
+    padding-right: 5px;
+}
