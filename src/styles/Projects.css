@@ -267,3 +267,28 @@
         margin: 5px 0px 5px 2.5px;
     }
 }
+@media(max-width: 600px){
+    .projects-container{
+        padding: 100px 25px;
+    }
+    .projects-container .header{
+        font-size: 25px;
+    }
+    .projects-container .project1{
+        flex: 50%;
+        margin: 0 2.5px 5px 0;
+    }
+    .projects-container .project2{
+        flex: 35%;
+        margin: 0 0px 5px 2.5px;
+    }
+    .projects-container .project3{
+        flex: 25%;
+        margin: 5px 0px;
+    }
+    .projects-container .project4{
+        flex: 70%;
+        margin: 5px 0px;
+    }
+
+}

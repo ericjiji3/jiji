@@ -134,3 +134,32 @@
         right: 0%;
     }
 }
+@media(max-width: 600px){
+    .home-container{
+        padding: 100px 25px 50px 25px;
+    }
+    .home-container .column1 .heading .name{
+        font-size: 15px;
+    }
+    .home-container .column1 .heading .job{
+        font-size: 25px;
+    }
+    .home-container .column1 .heading .job-description{
+        font-size: 10px;
+    }
+    .home-container .column1 .buttons{
+        font-size: 10px;
+    }
+    .home-container .column2{
+        flex: 100%;
+        position: absolute;
+        overflow: visible;
+        right: 7%;
+        top: 9%;
+    }
+    .home-container .column2 img{
+        width: 175px;
+        position: unset;
+        right: 0%;
+    }
+}
