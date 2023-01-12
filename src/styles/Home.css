@@ -109,7 +109,7 @@
 @media(max-width: 850px){
     .home-container{
         padding: 100px 50px 50px 50px;
-        background: linear-gradient(135deg, #0C0F11 60%, #FBFBFB 40%);
+        background: linear-gradient(140deg, #0C0F11 60%, #FBFBFB 40%);
     }
     .home-container .column1{
         flex: 100%;

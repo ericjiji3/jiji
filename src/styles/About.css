@@ -55,3 +55,11 @@
         margin: 110px 0 15px 0;
     }
 }
+@media(max-width: 850px){
+    .about-container{
+        padding: 0 50px;
+    }
+    .about-container .image-container img{
+        margin-bottom: 200px;
+    }
+}

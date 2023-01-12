@@ -2,10 +2,12 @@
     padding: 100px 150px;
     background-color: #0C0F11;
     display: flex;
+    flex-wrap: wrap;
 }
 .contact-container .header-image{
     color: #FBFBFB;
     flex: 40%;
+    position: relative;
 }
 .contact-container .header-image .header-container{
     padding-right: 10px;
@@ -225,4 +227,70 @@
     .contact-container .form-container{
         margin: 10px 0;
     }
+}
+@media(max-width: 850px){
+    .contact-container{
+        padding: 135px 50px;
+    }
+    .contact-container .header-image{
+        flex: 100%;
+    }
+    .contact-container .header-image .header-container{
+        padding-right: 210px;
+        padding-bottom: 50px;
+    }
+    .contact-container .header-image img{
+        width: 200px;
+        position: absolute;
+        left: 67%;
+        top: -17%;
+    }
+}
+@media(max-width: 600px){
+    .contact-container{
+        padding: 70px 50px;
+    }
+    .contact-container .header-image .header-container{
+        padding-right: 0px;
+        padding-bottom: 100px;
+    }
+    .contact-container .header-image img{
+        width: 150px;
+        position: absolute;
+        left: 58%;
+        top: 90px;
+    }
+    .contact-container .header-image .header-container h2{
+        font-size: 25px;
+    }
+    .contact-container .header-image .header-container h3{
+        font-size: 10px;
+    }
+    .contact-container .form-container .form{
+        margin: 5px;
+        padding: 15px;
+    }
+    .contact-container .form-container .form label span{
+        font-size: 8px;
+    }
+    .contact-container .form-container .form .submit-butt{
+        font-size: 10px
+    }
+    .contact-container .form-container .contact-icons{
+        padding: 5px;
+        margin: 5px;
+    }
+    .contact-container .form-container .contact-icons span{
+        font-size: 8px;
+    }
+    .contact-container .form-container .contact-icons .phone-container img{
+        width: 15px;
+    }
+    .contact-container .form-container .contact-icons .map-container img{
+        width: 15px;
+    }
+    .contact-container .form-container .contact-icons .mail-container img{
+        width: 15px;
+    }
+
 }

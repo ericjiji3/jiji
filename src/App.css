@@ -28,6 +28,9 @@
   padding-left: 30px;
   
 }
+.navbar-container .mobile-icon{
+  display: none;
+}
 .navbar-container .tab-container .tabs{
   list-style: none;
   display: flex;
@@ -49,7 +52,92 @@
     font-size: 12px;
   }
   .navbar-container .initials-container img{
-    width: 75px!important;
+    width: 75px;
+    padding: 0;
+  }
+}
+@media(max-width: 850px){
+  .navbar-container{
+    justify-content: space-between;
+    width: 40%;
+    flex-wrap: wrap;
+    transition: all .4s ease;
+    border-radius: 12px;
+  }
+  .navbar-container.open{
+    width: 90%;
+  }
+  .navbar-container .initials-container img{
+    padding-left: 17.5px;
+    width: 70px;
+  }
+  .navbar-container .initials-container, .mobile-icon{
+    /* padding: 0 5px;  */
+  }
+  .navbar-container .mobile-icon{
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: all .3s;
+    padding-right: 40px;
+  }
+  .navbar-container .mobile-icon div:nth-child(1){
+    top: -10px; 
+  }
+  .navbar-container.open .mobile-icon div:nth-child(1){
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .navbar-container.open .mobile-icon div:nth-child(2){
+    opacity: 0;
+  }
+  .navbar-container .mobile-icon div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 17.5px;
+    height: 2px;
+    background-color: #fff;
+    transform: translateZ(0);
+    transition: all .3s;
+  }
+  .navbar-container .mobile-icon div:nth-child(3){
+    top: 10px;
+  }
+  .navbar-container.open .mobile-icon div:nth-child(3){
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .navbar-container .tab-container{
+    max-height: 0;
+    transition: all .4s;
+    overflow: hidden;
+  }
+  .navbar-container .tab-container.open{
+    display: block;
+    flex: 100%;
+    max-height: 30vh;
+    transition: all .4s;
+  }
+  .navbar-container .tab-container .tabs{
+    /* flex-direction: column; */
+    justify-content: center;
+    padding: 5px 25px;
+    
+    
+  }
+  .navbar-container .tab-container.open .tabs{
+    
+
+  }
+  .navbar-container .tab-container .tabs .tab{
+    text-align: left;
   }
 }
 .App-header {

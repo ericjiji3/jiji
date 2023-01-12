@@ -1,9 +1,8 @@
 
 import './App.css';
-import {useRef} from "react";
+import {useRef, useState} from "react";
 import Home from './Home.js';
 import Projects from './Projects.js';
-import Navbar from './Navbar.js';
 import About from './About.js';
 import Contact from './Contact.js';
 import initials from './images/initials.png';
@@ -14,6 +13,7 @@ function App() {
   const about = useRef(null);
   const contact = useRef(null);
   const buttLocation = useRef(null);
+  const [open, setOpen] = useState(false);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -34,13 +34,22 @@ function App() {
       });
     }
   }
+  const toggleMobile = () =>{
+    setOpen(!open);
+    console.log(open);
+  }
   return (
     <div className="App">
-      <div className="navbar-container">
+      <div className={open ? 'navbar-container open' : 'navbar-container'}>
             <div className="initials-container">
                 <img src={initials}/>
             </div>
-            <div className="tab-container">
+            <div className="mobile-icon" onClick={() => toggleMobile()}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div className={open ? 'tab-container open' : 'tab-container'}>
                 <ul className="tabs">
                     <li className="tab" onClick={() => scrollToSection(home)}>
                         <span>Home</span>
