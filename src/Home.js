@@ -5,6 +5,7 @@ import p1Pic from "./images/p1pic.png";
 import linkedIn from "./images/icons/linkedIn.png";
 import twitter from "./images/icons/twitter.png";
 import github from "./images/icons/github.png";
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 function Home({reference, click}) {
     return (
@@ -17,10 +18,10 @@ function Home({reference, click}) {
                 </div>
                 <div className="buttons">
                     <div className="button-container">
-                        <a className="button" onClick={(e) => click(e)}><span className="contact-span">Hire Me</span></a>
+                        <a className="button" onClick={(e) => click(e)}><Link activeClass="active" to="contact" spy={true} smooth={true} duration={750} ><span className="contact-span">Hire Me</span></Link></a>
                     </div>
                     <div className="button-container">
-                        <a className="button" onClick={(e) => click(e)}><span className="work-span">View my work</span></a>
+                        <a className="button" onClick={(e) => click(e)}><Link activeClass="active" to="work" spy={true} smooth={true} duration={750} ><span className="work-span">View my work</span></Link></a>
                     </div>
                 </div>
                 <div className="socials">

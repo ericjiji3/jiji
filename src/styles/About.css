@@ -1,9 +1,12 @@
 .about-container{
     padding: 0 150px;
     display: flex;
+    overflow: hidden;
+    position: relative;
 }
 .about-container .image-container{
     flex: 70%;
+    
 
 }
 .about-container .image-container img{
@@ -12,8 +15,10 @@
     left: 5%;
     position: relative;
     margin-bottom: 125px;
+    z-index: 1;
 }
 .about-container .bio{
+    z-index: 1;
     flex: 30%;
     background-color: #0C0F11;
     color: #FBFBFB;
@@ -25,6 +30,17 @@
 }
 .about-container .bio p{
     font-size: 16px;
+}
+.about-container .stars{
+    box-shadow: #0C0F11 1270px 1941px, #0C0F11 1937px 201px, #0C0F11 1643px 1441px, #0C0F11 482px 104px, #0C0F11 1467px 1571px, #0C0F11 1591px 936px, #0C0F11 760px 1435px, #0C0F11 1681px 811px, #0C0F11 697px 1519px, #0C0F11 1302px 771px, #0C0F11 1797px 386px, #0C0F11 1210px 1488px, #0C0F11 285px 1799px, #0C0F11 378px 241px, #0C0F11 527px 952px, #0C0F11 1056px 1657px, #0C0F11 1179px 272px, #0C0F11 1550px 925px, #0C0F11 777px 1196px, #0C0F11 1849px 1910px, #0C0F11 1424px 501px, #0C0F11 1603px 434px, #0C0F11 1665px 1252px, #0C0F11 133px 358px, #0C0F11 593px 1421px, #0C0F11 1963px 974px, #0C0F11 280px 897px, #0C0F11 1878px 1571px, #0C0F11 1742px 994px, #0C0F11 219px 1824px, #0C0F11 211px 360px, #0C0F11 576px 518px, #0C0F11 863px 314px, #0C0F11 1462px 1730px, #0C0F11 1629px 1946px, #0C0F11 1271px 890px, #0C0F11 1757px 822px, #0C0F11 1437px 1433px, #0C0F11 1274px 549px, #0C0F11 345px 378px, #0C0F11 933px 1793px, #0C0F11 404px 1869px, #0C0F11 817px 493px, #0C0F11 1962px 1932px, #0C0F11 108px 891px, #0C0F11 1410px 283px, #0C0F11 1046px 930px, #0C0F11 1173px 895px, #0C0F11 629px 1712px, #0C0F11 522px 688px, #0C0F11 439px 1974px, #0C0F11 1151px 826px, #0C0F11 532px 1118px, #0C0F11 854px 590px, #0C0F11 563px 141px, #0C0F11 835px 826px, #0C0F11 1990px 313px, #0C0F11 1024px 255px, #0C0F11 383px 326px, #0C0F11 1179px 1159px, #0C0F11 1401px 256px, #0C0F11 180px 1142px, #0C0F11 147px 687px, #0C0F11 782px 1432px, #0C0F11 442px 482px, #0C0F11 227px 744px, #0C0F11 367px 768px, #0C0F11 1709px 56px, #0C0F11 1443px 1958px, #0C0F11 273px 629px, #0C0F11 1354px 1008px, #0C0F11 1944px 335px, #0C0F11 1995px 1834px, #0C0F11 1262px 1910px, #0C0F11 756px 951px, #0C0F11 1106px 32px, #0C0F11 510px 658px, #0C0F11 1271px 411px, #0C0F11 745px 333px, #0C0F11 783px 1797px, #0C0F11 1982px 539px, #0C0F11 1616px 277px, #0C0F11 1266px 907px, #0C0F11 314px 1860px, #0C0F11 51px 819px, #0C0F11 110px 1187px, #0C0F11 1372px 1470px, #0C0F11 1095px 1110px, #0C0F11 1380px 1797px, #0C0F11 906px 1084px, #0C0F11 754px 369px, #0C0F11 1238px 1705px, #0C0F11 123px 1733px, #0C0F11 1751px 552px, #0C0F11 64px 1604px, #0C0F11 214px 806px, #0C0F11 885px 144px, #0C0F11 1796px 1269px, #0C0F11 361px 950px, #0C0F11 152px 1172px;    width: 10px;
+    height: 50px;
+    width: 7.5px;
+    border-radius: 12px;
+    background: transparent;
+    animation: 50s linear 0s infinite normal none running animStar;
+    position: absolute;
+    left: -10%;
+    top: 100%;
 }
 @media(max-width: 1400px){
     .about-container .image-container img{
@@ -55,11 +71,64 @@
         margin: 110px 0 15px 0;
     }
 }
-@media(max-width: 850px){
+@media(max-width: 600px){
     .about-container{
         padding: 0 50px;
     }
     .about-container .image-container img{
         margin-bottom: 200px;
+    }
+}
+@media(max-width: 600px){
+    .about-container{
+        padding: 0 0 0px 25px;
+        position: relative;
+        flex-direction: column-reverse;
+        border-top: 5px solid #0C0F11;
+        border-radius: 12px;
+        margin-bottom: -175px;
+        background-color: #FBFBFB;
+    }
+    .about-container .image-container{
+        flex: 100%;
+    }
+    .about-container .image-container img{
+        margin-bottom: 0px;
+        width: 250px;
+    }
+    .about-container .bio{
+        flex: 100%;
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 12px;
+        margin-top: 120px;
+    }
+    .about-container .bio h2{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .about-container .bio p{
+        font-size: 8px;
+        margin-bottom: 20px;
+    }
+    .about-container .stars{
+        top: 65%;
+        animation: 50s linear 0s infinite normal none running mobileAnimStar;
+    }
+}
+
+@keyframes animStar{
+    0% {
+        transform: translateY(0px) translate3d(0px, 0px, 0px) translateZ(0px);
+    }
+    100% {
+        transform: translateY(-3500px) translate3d(0px, 0px, 0px) translateZ(0px);
+    }
+}
+@keyframes mobileAnimStar{
+    0% {
+        transform: translateY(0px) translate3d(0px, 0px, 0px) translateZ(0px);
+    }
+    100% {
+        transform: translateY(-2400px) translate3d(0px, 0px, 0px) translateZ(0px);
     }
 }

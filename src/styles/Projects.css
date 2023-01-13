@@ -4,6 +4,7 @@
     border: 5px solid #0C0F11;
     text-align: center;
     flex-wrap: wrap;
+    background-color: #FBFBFB;
 }
 .projects-container .header{
     flex: 100%;
@@ -269,7 +270,11 @@
 }
 @media(max-width: 600px){
     .projects-container{
-        padding: 100px 25px;
+        padding: 100px 25px 0;
+        border: none;
+        border-top: 5px solid #0C0F11;
+        border-radius: 12px;
+        margin-bottom: -45px;
     }
     .projects-container .header{
         font-size: 25px;

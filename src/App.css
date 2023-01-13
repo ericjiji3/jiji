@@ -57,12 +57,20 @@
   }
 }
 @media(max-width: 850px){
+
+  .home{
+    background-color: #0C0F11;
+    
+  }
+
+
   .navbar-container{
     justify-content: space-between;
     width: 40%;
     flex-wrap: wrap;
     transition: all .4s ease;
     border-radius: 12px;
+    top: 2%;
   }
   .navbar-container.open{
     width: 90%;

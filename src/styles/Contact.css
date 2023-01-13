@@ -248,7 +248,10 @@
 }
 @media(max-width: 600px){
     .contact-container{
-        padding: 70px 50px;
+        padding: 100px 25px;
+        border-top: 5px solid #c4c4c4;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
     }
     .contact-container .header-image .header-container{
         padding-right: 0px;
@@ -258,7 +261,7 @@
         width: 150px;
         position: absolute;
         left: 58%;
-        top: 90px;
+        top: 85px;
     }
     .contact-container .header-image .header-container h2{
         font-size: 25px;
