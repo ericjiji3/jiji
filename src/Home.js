@@ -55,9 +55,9 @@ function Home({reference, click}) {
                 </Parallax>
                 <Parallax translateX={['0vw', '-25vw']} opacity={[1,0]} startScroll={0} endScroll={1000}>
                 <div className="socials">
-                    <a className="twitter" href="https://twitter.com/dj_ji3" target="_blank"><img src={twitter} alt="oops"/></a>
-                    <a className="github" href="https://github.com/ericjiji3" target="_blank"><img src={github} alt="oops"/></a>
-                    <a className="linkedin" href="https://www.linkedin.com/in/eric-ji-b96775192/" target="_blank"><img src={linkedIn} alt="oops"/></a>
+                    <a className="twitter" href="https://twitter.com/dj_ji3"  rel="noreferrer"><img src={twitter} alt="oops"/></a>
+                    <a className="github" href="https://github.com/ericjiji3" target="_blank" rel="noreferrer"><img src={github} alt="oops"/></a>
+                    <a className="linkedin" href="https://www.linkedin.com/in/eric-ji-b96775192/" target="_blank" rel="noreferrer"><img src={linkedIn} alt="oops"/></a>
                 </div>
                 </Parallax>
             </div>
