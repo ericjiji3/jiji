@@ -9,13 +9,13 @@ function Projects({reference, onClick}) {
         const [entry] = entries;
         setIsVisible(entry.isIntersecting);
     }
-    
+    const options ={
+        root: null,
+        rootMargin: '5px',
+        threshold: .35
+    }
     useEffect(() => {
-        const options ={
-            root: null,
-            rootMargin: '5px',
-            threshold: .35
-        }
+        
         const observer = new IntersectionObserver(callbackFunction, options)
         if(containerRef.current){
             observer.observe(containerRef.current);

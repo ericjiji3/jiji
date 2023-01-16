@@ -9,13 +9,13 @@ function About({reference, onClick}) {
         const [entry] = entries;
         setIsVisible(entry.isIntersecting);
     }
-    
+    const options ={
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.25
+    }
     useEffect(() => {
-        const options ={
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.25
-        }
+        
         const observer = new IntersectionObserver(callbackFunction, options)
         if(containerRef.current){
             observer.observe(containerRef.current);

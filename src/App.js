@@ -14,24 +14,8 @@ function App() {
   const work = useRef(null);
   const about = useRef(null);
   const contact = useRef(null);
-  const buttLocation = useRef(null);
   const [open, setOpen] = useState(false);
 
-
-
-  buttonScroll = (e) => {
-    if(e.target.className === "contact-span"){
-      window.scrollTo({
-        top: contact.current.offsetTop,
-        behavior: 'smooth'
-      });
-    }else{
-      window.scrollTo({
-        top: work.current.offsetTop,
-        behavior: 'smooth'
-      });
-    }
-  }
 
 
   const toggleMobile = () =>{
