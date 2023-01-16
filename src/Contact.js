@@ -136,12 +136,12 @@ function Contact({reference, onClick}) {
                 <form className="form" ref={form} onSubmit={sendEmail}>
                     <label className="name-input">
                         <span className="req">Full Name</span>
-                        <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)}/>
+                        <input className="smaller" type="text" name="name" value={name} onChange={(e) => setName(e.target.value)}/>
                         <span className={nameErr ? 'req-text active' : 'req-text'}>*Required Field</span>
                     </label>
                     <label className="company-input">
                         <span>Company</span>
-                        <input type="text" name="company" value={company} onChange={(e) => setCompany(e.target.value)}/>
+                        <input className="smaller" type="text" name="company" value={company} onChange={(e) => setCompany(e.target.value)}/>
                     </label>
                     <label className="phone-input">
                         <span className="req">Phone</span>

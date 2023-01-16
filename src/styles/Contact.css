@@ -194,6 +194,7 @@
     margin: 15px 0;
     z-index: 3;
 }
+
 .contact-container .form-container .form label .req-text{
     display: none;
 }
@@ -735,6 +736,9 @@
     }
     .contact-container .form-container .form label span{
         font-size: 8px;
+    }
+    .contact-container .form-container .form label .smaller{
+        width: 90%;
     }
     .contact-container .form-container .form .submit-butt{
         font-size: 10px
