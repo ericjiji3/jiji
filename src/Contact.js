@@ -1,5 +1,5 @@
 import './styles/Contact.css';
-import React, {useEffect, useState, useRef, useCallback} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import p3pic from './images/p3pic.png';
 import mail from './images/icons/mail.png';
 import map from './images/icons/map.png';
@@ -21,11 +21,6 @@ function Contact({reference, onClick}) {
     const [emailErr, setEmailErr] = useState(false);
 
     
-    const options ={
-        root: null,
-        rootMargin: '0px',
-        threshold: .5
-    };
     const form = useRef();
 
     function validateFields(data){
@@ -68,7 +63,7 @@ function Contact({reference, onClick}) {
             'email' : email,
             'message' : message
         }
-        // $('.form .button').prop('disabled', true);
+
         console.log(data);
         if(validateFields(data)){
             buttonRef.current.classList.add('loading');
@@ -85,8 +80,6 @@ function Contact({reference, onClick}) {
                 e.target.reset();
             });
         } else{
-            // $('.form .button').html("✖");
-            // $('.form .button').addClass('incorrect');
             buttonRef.current.classList.remove('loading');
             buttonRef.current.classList.add('error');
             e.target.reset();
@@ -100,7 +93,11 @@ function Contact({reference, onClick}) {
             console.log(isVisible);
         }
         
-        const observer = new IntersectionObserver(callbackFunction, options)
+        const observer = new IntersectionObserver(callbackFunction, {
+            root: null,
+            rootMargin: '0px',
+            threshold: .5
+        })
         const observedContact = containerRef.current;
         if(observedContact){
             observer.observe(observedContact);
