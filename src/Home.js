@@ -6,9 +6,32 @@ import twitter from "./images/icons/twitter.png";
 import github from "./images/icons/github.png";
 import { Parallax} from 'react-scroll-parallax';
 import { Link} from 'react-scroll';
+import { useState, useEffect } from 'react';
 
+function getWindowDimensions() {
+    const { innerWidth: width } = window;
+    return {
+      width
+    };
+}
+function useWindowDimensions() {
+const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+useEffect(() => {
+    function handleResize() {
+    setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+}, []);
+
+return windowDimensions;
+}
+  
 function Home({reference, click}) {
-    
+    const {width} = useWindowDimensions();
+
     return (
         <div className="home-container" ref={reference}>
             
@@ -23,7 +46,7 @@ function Home({reference, click}) {
                 <Parallax translateX={['0vw', '-25vw']} opacity={[1,0]} startScroll={0} endScroll={1000}>
                 <div className="buttons">
                     <div className="button-container" onClick={(e) => click(e)}>
-                    <Link activeClass="active" to="contact" spy={true} smooth={true} duration={750} ><span className="button"><span className="contact-span">Hire Me</span></span></Link>
+                    <Link activeClass="active" to="contact" spy={true} smooth={true} duration={750} delay={width < 850 ? 800 : 200}><span className='button'><span className="contact-span">Hire Me</span></span></Link>
                     </div>
                     <div className="button-container" onClick={(e) => click(e)}>
                     <Link activeClass="active" to="work" spy={true} smooth={true} duration={750} ><span className="button two" ><span className="work-span">View my work</span></span></Link>
@@ -32,9 +55,9 @@ function Home({reference, click}) {
                 </Parallax>
                 <Parallax translateX={['0vw', '-25vw']} opacity={[1,0]} startScroll={0} endScroll={1000}>
                 <div className="socials">
-                    <span className="twitter"><img src={twitter} alt="oops"/></span>
-                    <span className="github"><img src={github} alt="oops"/></span>
-                    <span className="linkedin"><img src={linkedIn} alt="oops"/></span>
+                    <a className="twitter" href="https://twitter.com/dj_ji3" target="_blank"><img src={twitter} alt="oops"/></a>
+                    <a className="github" href="https://github.com/ericjiji3" target="_blank"><img src={github} alt="oops"/></a>
+                    <a className="linkedin" href="https://www.linkedin.com/in/eric-ji-b96775192/" target="_blank"><img src={linkedIn} alt="oops"/></a>
                 </div>
                 </Parallax>
             </div>

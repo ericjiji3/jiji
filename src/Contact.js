@@ -1,6 +1,7 @@
 import './styles/Contact.css';
 import React, {useEffect, useState, useRef} from 'react';
 import p3pic from './images/p3pic.png';
+import p33pic from './images/p33pic.png';
 import mail from './images/icons/mail.png';
 import map from './images/icons/map.png';
 import phoneIcon from './images/icons/phone.png';
@@ -126,7 +127,8 @@ function Contact({reference, onClick}) {
                     <h2>Lets Get to Work</h2>
                     <h3>Call, Text, or email . . . I’ll respond within  24 hours!</h3>
                 </div>
-                <img src={p3pic} alt="oops"/>
+                <img className="contactPic1" src={p3pic} alt="oops"/>
+                <img className="contactPic2" src={p33pic} alt="oops"/>
             </div>
             
             <div className={isVisible ? 'form-container animate' : 'form-container'}>

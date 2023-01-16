@@ -150,10 +150,17 @@
     font-size: 20px;
     margin: 0;
 }
-.contact-container .header-image img{
-    width: 100%;
-    position: relative;
+.contact-container .header-image .contactPic1{
+    width: 80%;
+    position: absolute;
     left: 0%;
+    z-index: 2;
+}
+.contact-container .header-image .contactPic2{
+    width: 30%;
+    position: absolute;
+    right: -8%;
+    top: 50%;
     z-index: 2;
 }
 .contact-container .form-container.animate{
@@ -635,15 +642,24 @@
         flex: 100%;
         transform: translateX(-50px)
     }
+
     .contact-container .header-image .header-container{
         padding-right: 210px;
-        padding-bottom: 50px;
+        padding-bottom: 75px;
     }
-    .contact-container .header-image img{
-        width: 200px;
+    .contact-container .header-image .contactPic1{
+        width: 31%;
         position: absolute;
-        left: 67%;
-        top: -17%;
+        top: -20%;
+        z-index: 2;
+        left: 73%;
+    }
+    .contact-container .header-image .contactPic2{
+        width: 10%;
+        position: absolute;
+        left: 0%;
+        top: 65%;
+        z-index: 2;
     }
     .contact-container .form-container{
         transform: translateX(50px);
@@ -691,13 +707,21 @@
     }
     .contact-container .header-image .header-container{
         padding-right: 0px;
-        padding-bottom: 100px;
+        padding-bottom: 25px;
     }
-    .contact-container .header-image img{
-        width: 150px;
+    .contact-container .header-image .contactPic1{
+        width: 31%;
         position: absolute;
-        left: 58%;
-        top: 85px;
+        top: -20%;
+        z-index: 2;
+        left: 73%;
+    }
+    .contact-container .header-image .contactPic2{
+        width: 15%;
+        position: absolute;
+        left: 0%;
+        top: 80%;
+        z-index: 2;
     }
     .contact-container .header-image .header-container h2{
         font-size: 25px;

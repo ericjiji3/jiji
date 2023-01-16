@@ -54,6 +54,9 @@
     width: 100%;
     align-items: center;
     display: flex;
+    text-decoration: none;
+    color: unset;
+
 }
 .projects-container .projects .project-container.grid-col-1{
     /* grid-column-start: 1;

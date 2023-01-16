@@ -31,7 +31,7 @@ function Projects({reference, onClick}) {
             <div className="projects-container" ref={reference}>
                 <h2 className={isVisible ? 'header animate' : 'header'} >Work</h2>
                 <div className={isVisible ? 'projects animate' : 'projects'} ref={containerRef}>
-                    <div className="project-container one grid-col-1">
+                    <a className="project-container one grid-col-1" href="https://www.jordon-inrwav.com/" target="_blank">
                         <span className="border-animate"></span>
                         <div className="project1">
                         <div className="speech-bubble medium">
@@ -41,9 +41,9 @@ function Projects({reference, onClick}) {
                             </span>
                         </div>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div className="project-container two grid-col-1">
+                    <a className="project-container two grid-col-1" href="https://southcloudramen.com/" target="_blank">
                         <span className="border-animate"></span>
                         <div className="project2">
                             <div className="speech-bubble medium2">
@@ -54,11 +54,11 @@ function Projects({reference, onClick}) {
                             </div>
                             
                         </div>
-                    </div>
+                    </a>
                 
                     
                     
-                    <div className="project-container three grid-row-2">
+                    <a className="project-container three grid-row-2" href="https://www.360connect.com/" target="_blank">
                         <span className="border-animate"></span>
                         <div className="project3">
                             <div className="speech-bubble large">
@@ -68,12 +68,12 @@ function Projects({reference, onClick}) {
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     
                     
 
-                    <div className="project-container four grid-col-2">
+                    <a className="project-container four grid-col-2" href="https://mahone.netlify.app/" target="_blank">
                         <span className="border-animate"></span>
                         <div className="project4">
                         <div className="speech-bubble large2">
@@ -83,7 +83,7 @@ function Projects({reference, onClick}) {
                             </span>
                         </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 
             </div>
