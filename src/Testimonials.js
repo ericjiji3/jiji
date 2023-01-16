@@ -1,5 +1,5 @@
 import './styles/Testimonials.css';
-import React, {useEffect, useState,useRef} from 'react';
+import React, {useRef} from 'react';
 import testimonialData from './TestimonialData.js';
 import Slider from "react-slick";
 
