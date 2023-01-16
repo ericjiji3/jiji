@@ -17,12 +17,13 @@ function Projects({reference, onClick}) {
     useEffect(() => {
         
         const observer = new IntersectionObserver(callbackFunction, options)
-        if(containerRef.current){
-            observer.observe(containerRef.current);
+        const observedWork = containerRef.current;
+        if(observedWork){
+            observer.observe(observedWork);
         }
         return () => {
-            if(containerRef.current){
-                observer.unobserve(containerRef.current)
+            if(observedWork){
+                observer.unobserve(observedWork)
             }
         }
     }, [containerRef, options])

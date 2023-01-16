@@ -20,11 +20,7 @@ function Contact({reference, onClick}) {
     const [phoneErr, setPhoneErr] = useState(false);
     const [emailErr, setEmailErr] = useState(false);
 
-    const callbackFunction = (entries) => {
-        const [entry] = entries;
-        setIsVisible(entry.isIntersecting);
-        console.log(isVisible);
-    }
+    
     const options ={
         root: null,
         rootMargin: '0px',
@@ -98,13 +94,19 @@ function Contact({reference, onClick}) {
         
     }
     useEffect(() => {
+        const callbackFunction = (entries) => {
+            const [entry] = entries;
+            setIsVisible(entry.isIntersecting);
+            console.log(isVisible);
+        }
         const observer = new IntersectionObserver(callbackFunction, options)
-        if(containerRef.current){
-            observer.observe(containerRef.current);
+        const observedContact = containerRef.current;
+        if(observedContact){
+            observer.observe(observedContact);
         }
         return () => {
-            if(containerRef.current){
-                observer.unobserve(containerRef.current)
+            if(observedContact){
+                observer.unobserve(observedContact)
             }
         }
     }, [containerRef, options])
