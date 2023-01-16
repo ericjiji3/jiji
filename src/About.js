@@ -6,17 +6,16 @@ function About({reference, onClick}) {
     const containerRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
     
-    const options ={
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.25
-    }
     useEffect(() => {
         const callbackFunction = (entries) => {
             const [entry] = entries;
             setIsVisible(entry.isIntersecting);
         }
-        const observer = new IntersectionObserver(callbackFunction, options)
+        const observer = new IntersectionObserver(callbackFunction, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.25
+        })
         const observedEl = containerRef.current
         if(observedEl){
             observer.observe(observedEl);
@@ -26,7 +25,7 @@ function About({reference, onClick}) {
                 observer.unobserve(observedEl)
             }
         }
-    }, [containerRef, options])
+    }, [containerRef])
 
     
     return (

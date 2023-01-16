@@ -9,14 +9,14 @@ function Projects({reference, onClick}) {
         const [entry] = entries;
         setIsVisible(entry.isIntersecting);
     }
-    const options ={
-        root: null,
-        rootMargin: '5px',
-        threshold: .35
-    }
+
     useEffect(() => {
         
-        const observer = new IntersectionObserver(callbackFunction, options)
+        const observer = new IntersectionObserver(callbackFunction, {
+            root: null,
+            rootMargin: '5px',
+            threshold: .35
+        })
         const observedWork = containerRef.current;
         if(observedWork){
             observer.observe(observedWork);
@@ -26,7 +26,7 @@ function Projects({reference, onClick}) {
                 observer.unobserve(observedWork)
             }
         }
-    }, [containerRef, options])
+    }, [containerRef])
     return (
             <div className="projects-container" ref={reference}>
                 <h2 className={isVisible ? 'header animate' : 'header'} >Work</h2>
