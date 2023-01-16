@@ -356,6 +356,7 @@
     width: unset;
 }
 .contact-container .form-container .contact-icons{
+    justify-content: center;
     border: 3px solid #0C0F11;
     margin: 20px;
     display: flex;
@@ -364,10 +365,11 @@
     color: #FBFBFB;
     border-radius: 12px;
 }
+
 .contact-container .form-container .contact-icons .phone-container{
     flex: 30%;
     text-align: center;
-    background-color: #0C0F11;
+    background: #0C0F11;
     padding: 25px 40px;
     margin-right: 5px;
     margin-bottom: 10px;
@@ -376,6 +378,17 @@
     justify-content: center;
     letter-spacing: 2px;
     border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FBFBFB;
+    border: 2px solid #FBFBFB;
+}
+.contact-container .form-container .contact-icons .phone-container:hover{
+    background: linear-gradient(124deg, #da1d00, #d31b1b, #cfa51a, #c2c519, #18c735, #19bdc5, #2519c9, #c300d4, #dd00f3);
+    background-size: 1800% 1800%;
+    animation: rainbow 18s ease infinite;
+    border: 2px solid #0C0F11;
+    transition: all 0.5s ease;
 }
 .contact-container .form-container .contact-icons .phone-container img{
     padding-right: 5px;
@@ -384,7 +397,7 @@
     flex: 30%;
     text-align: center;
     padding: 25px 40px;
-    background-color: #0C0F11;
+    background: #0C0F11;
     margin-left: 5px;
     margin-bottom: 10px;
     align-items: center;
@@ -392,6 +405,14 @@
     justify-content: center;
     letter-spacing: 2px;
     border-radius: 12px;
+    border: 2px solid #FBFBFB;
+}
+.contact-container .form-container .contact-icons .map-container:hover{
+    background: linear-gradient(124deg, #c2c519, #19bdc5, #2519c9,#da1d00, #d31b1b, #cfa51a,  #18c735,  #c300d4, #dd00f3);
+    background-size: 1800% 1800%;
+    animation: rainbow 18s ease infinite;
+    border: 2px solid #0C0F11;
+    transition: all 0.5s ease;
 }
 .contact-container .form-container .contact-icons .map-container img{
     padding-right: 5px;
@@ -406,6 +427,17 @@
     justify-content: center;
     letter-spacing: 2px;
     border-radius: 12px;
+    color: #FBFBFB;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #FBFBFB;
+}
+.contact-container .form-container .contact-icons .mail-container:hover{
+    background: linear-gradient(124deg, #2519c9,#c300d4,#da1d00,  #cfa51a, #d31b1b, #18c735, #19bdc5,  #c2c519, #dd00f3);
+    background-size: 1800% 1800%;
+    animation: rainbow 18s ease infinite;
+    border: 2px solid #0C0F11;
+    transition: all 0.5s ease;
 }
 .contact-container .form-container .contact-icons .mail-container img{
     padding-right: 5px;
@@ -687,6 +719,48 @@
     .contact-container .form-container .contact-icons span{
         font-size: 8px;
     }
+    .contact-container .form-container .form .submit-butt.loading .loading-animation{
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 30%;
+        right: 38%;
+    }.contact-container .form-container .form .submit-butt.success .checkmark{
+        width: 10px;
+        height: 10px;
+    }
+    .contact-container .form-container .form .submit-butt .checkmark::after{
+        height: 10px;
+        width: 5px;
+        right: 23px;
+        top: 20px;
+    }
+    .contact-container .form-container .form .submit-butt.success .checkmark::after{
+        animation: checkmarkMobile 800ms ease;
+    }
+    
+    @keyframes checkmarkMobile {
+        0% {
+          height: 0;
+          width: 0;
+          opacity: 1;
+        }
+        20% {
+          height: 0;
+          width: 5px;
+          opacity: 1;
+        }
+        40% {
+          height: 10px;
+          width: 5px;
+          opacity: 1;
+        }
+        100% {
+          height: 10px;
+          width: 5px;
+          opacity: 1;
+        }
+      }
     .contact-container .form-container .contact-icons .phone-container img{
         width: 15px;
     }

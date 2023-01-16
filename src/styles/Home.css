@@ -57,6 +57,12 @@
     animation: rainbow 18s ease infinite;
     transition: all 0.5s ease;
 }
+.home-container .column1 .buttons .button-container .button.two:hover{
+    background: linear-gradient(124deg, #2519c9, #c300d4, #dd00f3, #cfa51a, #c2c519, #18c735, #da1d00, #d31b1b,#19bdc5  );
+    background-size: 1800% 1800%;
+    animation: rainbow 18s ease infinite;
+    transition: all 0.5s ease;
+}
 @keyframes rainbow {
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
@@ -157,7 +163,7 @@
     .home-container .column1 .buttons{
         font-size: 12px;
     }
-    .home-container .column1 .socials a img{
+    .home-container .column1 .socials span img{
         width: 25px;
     }
 }
@@ -180,6 +186,10 @@
     .home-container .column1 .buttons .button-container .button{
         margin: 15px 0;
         padding: 15px 10px;
+        width: 35%;
+    }
+    .home-container .column1 .socials span img{
+        width: 20px;
     }
     .home-container .column2{
         flex: 100%;
@@ -197,7 +207,7 @@
 @media(max-width: 600px){
     .home-container{
         padding: 85px 25px 75px 25px;
-        margin-bottom: -45px;
+        margin-bottom: -60px;
     }
     .home-container .column1 .heading .name{
         font-size: 15px;

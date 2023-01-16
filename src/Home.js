@@ -26,7 +26,7 @@ function Home({reference, click}) {
                         <span className="button" onClick={(e) => click(e)}><Link activeClass="active" to="contact" spy={true} smooth={true} duration={750} ><span className="contact-span">Hire Me</span></Link></span>
                     </div>
                     <div className="button-container">
-                        <span className="button" onClick={(e) => click(e)}><Link activeClass="active" to="work" spy={true} smooth={true} duration={750} ><span className="work-span">View my work</span></Link></span>
+                        <span className="button two" onClick={(e) => click(e)}><Link activeClass="active" to="work" spy={true} smooth={true} duration={750} ><span className="work-span">View my work</span></Link></span>
                     </div>
                 </div>
                 </Parallax>

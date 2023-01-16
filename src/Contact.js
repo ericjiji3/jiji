@@ -158,18 +158,20 @@ function Contact({reference, onClick}) {
                     <button className="submit-butt" type="submit" value="submit" ref={buttonRef}><span class='submit-text'>Submit</span><span className="loading-animation"></span><div class="checkmark"></div></button>
                 </form>
                 <div className="contact-icons">
-                    <div className="phone-container">
-                        <img src={phoneIcon} alt="oops"/>
-                        <span>713-885-7540</span>
-                    </div>
+                    <a href="tel:713-885-7540" className="phone-container">
+                        
+                            <img src={phoneIcon} alt="oops"/>
+                            <span>713-885-7540</span>
+                        
+                    </a>
                     <div className="map-container">
                         <img src={map} alt="oops"/>
                         <span>Austin, TX</span>
                     </div>
-                    <div className="mail-container">
+                    <a href="mailto: eric.ji3333@gmail.com" className="mail-container">
                         <img src={mail} alt="oops"/>
                         <span>eric.ji3333@gmail.com</span>
-                    </div>
+                    </a>
                 </div>
                 
             </div>
