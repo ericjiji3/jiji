@@ -3,11 +3,141 @@
     background-color: #0C0F11;
     display: flex;
     flex-wrap: wrap;
+    border-top: 5px solid #c4c4c4;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+#circle-container{
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00adef', endColorstr='#0076e5',GradientType=1 );
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px auto;
+    z-index: 0;
+    overflow: hidden;
+    top: 0%;
+    right: 0%;
+}
+
+#container-inside {
+    position: relative;
+    min-width: 960px;
+    max-width: 1280px;
+    height: auto;
+    min-height: 100%;
+    margin: 0px auto;
+    padding: 0px auto;
+    overflow: visible;
+}
+
+#circle-small {
+    -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+    animation: circle-small-scale 3s ease-in-out infinite alternate;
+	animation-timing-function: cubic-bezier(.6, 0, .4, 1);
+	animation-delay: 0s;
+	position: absolute;
+	top: -10%;
+	right: -35%;
+    background: #fff;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+#circle-medium {
+    -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+    animation: circle-small-scale 3s ease-in-out infinite alternate;
+	animation-timing-function: cubic-bezier(.6, 0, .4, 1);
+	animation-delay: 0.3s;
+	position: absolute;
+	top: -25%;
+	right: -50%;
+    background: #fff;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+#circle-large {
+    -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+    animation: circle-small-scale 3s ease-in-out infinite alternate;
+	animation-timing-function: cubic-bezier(.6, 0, .4, 1);
+	animation-delay: 0.6s;
+	position: absolute;
+	top: -35%;
+	right: -60%;
+    background: #fff;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+#circle-xlarge {
+    -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+    animation: circle-small-scale 3s ease-in-out infinite alternate;
+	animation-timing-function: cubic-bezier(.6, 0, .4, 1);
+	animation-delay: 0.9s;
+	position: absolute;
+	top: -45%;
+	right: -70%;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.1;
+}
+
+#circle-xxlarge {
+    -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+    animation: circle-small-scale 3s ease-in-out infinite alternate;
+	animation-timing-function: cubic-bezier(.6, 0, .4, 1);
+	animation-delay: 1.2s;
+	position: absolute;
+	top: -55%;
+	right: -80%;
+    background: #fff;
+    width: 125%;
+    height: 125%;
+    border-radius: 50%;
+    opacity: 0.05;
+}
+
+@-webkit-keyframes circle-small-scale {
+    0% {
+        -webkit-transform: scale(1.0);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+    }
+}
+
+@keyframes circle-small-scale {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+.contact-container .header-image.animate{
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 1s ease;
 }
 .contact-container .header-image{
     color: #FBFBFB;
-    flex: 40%;
+    flex: 25%;
     position: relative;
+    z-index: 2;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 1s ease;
 }
 .contact-container .header-image .header-container{
     padding-right: 10px;
@@ -23,28 +153,57 @@
 .contact-container .header-image img{
     width: 100%;
     position: relative;
-    left: 20%;
+    left: 0%;
+    z-index: 2;
+}
+.contact-container .form-container.animate{
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 1s ease;
 }
 .contact-container .form-container{
-    flex: 60%;
+    flex: 25%;
     color: #0C0F11;
     background-color: #FBFBFB;
     margin: 50px 0;
+    z-index: 1;
+    border: 5px solid #0C0F11;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 1s ease;
+    border-radius: 12px;
 }
 .contact-container .form-container .form{
-    border: 5px solid #0C0F11;
+    border: 3px solid #0C0F11;
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
     padding: 30px 40px;
     justify-content: center;
+    border-radius: 12px;
 }
 .contact-container .form-container .form label{
     flex: 100%;
     margin: 15px 0;
+    z-index: 3;
+}
+.contact-container .form-container .form label .req-text{
+    display: none;
+}
+.contact-container .form-container .form label .req-text.active{
+    display: block;
+    margin-top: 5px;
+    font-size: 10px;
+    color: rgb(228, 29, 29);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
 }
 .contact-container .form-container .form .name-input{
     margin-top: 0;
+}
+.contact-container .form-container .form label .req::after{
+    content: '*';
+    margin-left: 2.5px;
 }
 .contact-container .form-container .form label span{
     display: block;
@@ -52,24 +211,158 @@
 }
 .contact-container .form-container .form label input{
     width: 99%;
+    height: 50%;
+    border: 2px solid #0C0F11;
+    border-radius: 5px;
 }
 .contact-container .form-container .form label textarea{
     width: 99%;
     height: 100px;
+    border: 2px solid #0C0F11;
+    border-radius: 5px;
 }
 .contact-container .form-container .form .submit-butt{
     padding: 20px 40px;
     background-color: #0C0F11;
     color: #FBFBFB;
     margin-top: 15px;
+    border: 3px solid #0C0F11;
+    text-align: center;
+    width: 40%;
+    transition: all 0.5s ease;
+    font-family: 'Akira';
+    font-size: 15px;
+    border-radius: 12px;
+    position: relative;
+}
+.contact-container .form-container .form .submit-butt .submit-text{
+    display: block;
+}
+.contact-container .form-container .form .submit-butt .loading-animation{
+    display: none;
+}
+.contact-container .form-container .form .submit-butt.loading .submit-text{
+    display: none;
+}
+.contact-container .form-container .form .submit-butt .checkmark{
+    display: none;
+}
+.contact-container .form-container .form .submit-butt.loading{
+    width: 100%;
+    background: linear-gradient(124deg, #da1d00, #d31b1b, #cfa51a, #c2c519, #18c735, #19bdc5, #2519c9, #c300d4, #dd00f3);
+    color: #FBFBFB;
+    background-size: 1800% 1800%;
+    animation: loading 0.25s forwards, rainbow 18s ease infinite;
+    text-align: center;
+}
+.contact-container .form-container .form .submit-butt.loading .loading-animation{
+    width: 14px;
+    height: 14px;
+    border: 3px solid #FBFBFB;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    text-align: center;
+}
+.contact-container .form-container .form .submit-butt.success .submit-text{
+    display: none;
+}
+.contact-container .form-container .form .submit-butt.success .loading-animation{
+    display: none;
+}
+.contact-container .form-container .form .submit-butt .checkmark::after{
+    opacity: 1;
+    height: 20px;
+    width: 10px;
+    transform-origin: left top;
+    border-right: 3px solid #FBFBFB;
+    border-top: 3px solid #FBFBFB;
+    content: '';
+    right: 45px;
+    top: 26px;
+    position: absolute;
+}
+.contact-container .form-container .form .submit-butt.success:hover{
+    width: 15%;
+}
+.contact-container .form-container .form .submit-butt.success{
+    background: linear-gradient(124deg, #da1d00, #d31b1b, #cfa51a, #c2c519, #18c735, #19bdc5, #2519c9, #c300d4, #dd00f3);
+    color: #FBFBFB;
+    background-size: 1800% 1800%;
+    animation: rainbow 18s ease infinite;
+    width: 15%;
+    text-align: center;
+    
+}
+.contact-container .form-container .form .submit-butt.success .checkmark{
+    display: block;
+    width: 14px;
+    height: 14px;
+}
+.contact-container .form-container .form .submit-butt.success .checkmark::after{
+
+    animation: checkmark 800ms ease;
+    transform: scaleX(-1) rotate(135deg);
+    
+}
+@keyframes checkmark {
+    0% {
+      height: 0;
+      width: 0;
+      opacity: 1;
+    }
+    20% {
+      height: 0;
+      width: 10px;
+      opacity: 1;
+    }
+    40% {
+      height: 20px;
+      width: 10px;
+      opacity: 1;
+    }
+    100% {
+      height: 20px;
+      width: 10px;
+      opacity: 1;
+    }
+  }
+@keyframes loading{
+    0%{
+        width: 60%;
+    }
+    100%{
+        width: 15%;
+    }
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+.contact-container .form-container .form .submit-butt:hover{
+    cursor: pointer;
+    background-color: #FBFBFB;
+    color: #0C0F11;
+    width: 60%;
+    transition: all 0.5s ease;
+}
+.contact-container .form-container .form .submit-butt.loading:hover{
+    width: unset;
 }
 .contact-container .form-container .contact-icons{
-    border: 5px solid #0C0F11;
+    border: 3px solid #0C0F11;
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
     padding: 30px 40px;
     color: #FBFBFB;
+    border-radius: 12px;
 }
 .contact-container .form-container .contact-icons .phone-container{
     flex: 30%;
@@ -82,6 +375,7 @@
     display: flex;
     justify-content: center;
     letter-spacing: 2px;
+    border-radius: 12px;
 }
 .contact-container .form-container .contact-icons .phone-container img{
     padding-right: 5px;
@@ -97,6 +391,7 @@
     display: flex;
     justify-content: center;
     letter-spacing: 2px;
+    border-radius: 12px;
 }
 .contact-container .form-container .contact-icons .map-container img{
     padding-right: 5px;
@@ -110,6 +405,7 @@
     display: flex;
     justify-content: center;
     letter-spacing: 2px;
+    border-radius: 12px;
 }
 .contact-container .form-container .contact-icons .mail-container img{
     padding-right: 5px;
@@ -117,6 +413,40 @@
 @media(max-width: 1400px){
     .contact-container{
         padding: 75px 150px;
+    }
+    #circle-small {
+        top: -20%;
+        right: -10%;
+        width: 25%;
+        height: 40%;
+    }
+    
+    #circle-medium {
+        top: -30%;
+        right: -20%;
+        width: 50%;
+        height: 75%;
+    }
+    
+    #circle-large {
+        top: -40%;
+        right: -30%;
+        width: 75%;
+        height: 100%;
+    }
+    
+    #circle-xlarge {
+        top: -50%;
+        right: -45%;
+        width: 100%;
+        height: 125%;
+    }
+    
+    #circle-xxlarge {
+        top: -60%;
+        right: -55%;
+        width: 125%;
+        height: 150%;
     }
     .contact-container .header-image .header-container h2{
         font-size: 40px;
@@ -232,8 +562,43 @@
     .contact-container{
         padding: 135px 50px;
     }
+    #circle-small {
+        top: 0%;
+        right: 30%;
+        width: 10%;
+        height: 10%;
+    }
+    
+    #circle-medium {
+        top: -5%;
+        right: 25%;
+        width: 20%;
+        height: 20%;
+    }
+    
+    #circle-large {
+        top: -15%;
+        right: 15%;
+        width: 40%;
+        height: 40%;
+    }
+    
+    #circle-xlarge {
+        top: -20%;
+        right: 10%;
+        width: 60%;
+        height: 60%;
+    }
+    
+    #circle-xxlarge {
+        top: -30%;
+        right: 0%;
+        width: 80%;
+        height: 80%;
+    }
     .contact-container .header-image{
         flex: 100%;
+        transform: translateX(-50px)
     }
     .contact-container .header-image .header-container{
         padding-right: 210px;
@@ -245,13 +610,49 @@
         left: 67%;
         top: -17%;
     }
+    .contact-container .form-container{
+        transform: translateX(50px);
+    }
 }
 @media(max-width: 600px){
     .contact-container{
         padding: 100px 25px;
-        border-top: 5px solid #c4c4c4;
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
+    }
+    #circle-small {
+        top: 0%;
+        right: 60%;
+        width: 10%;
+        height: 10%;
+    }
+    
+    #circle-medium {
+        top: -5%;
+        right: 55%;
+        width: 20%;
+        height: 20%;
+    }
+    
+    #circle-large {
+        top: -15%;
+        right: 45%;
+        width: 40%;
+        height: 40%;
+    }
+    
+    #circle-xlarge {
+        top: -25%;
+        right: 35%;
+        width: 60%;
+        height: 60%;
+    }
+    
+    #circle-xxlarge {
+        top: -35%;
+        right: 25%;
+        width: 80%;
+        height: 80%;
     }
     .contact-container .header-image .header-container{
         padding-right: 0px;

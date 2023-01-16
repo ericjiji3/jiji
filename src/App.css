@@ -4,6 +4,12 @@
   width: 100%;
   margin: auto;
   position: relative;
+  background-color: #FBFBFB;
+  overflow: hidden;
+}
+.App .contact{
+  
+  background-color: #0C0F11;
 }
 .navbar-container{
   position: fixed;
@@ -42,6 +48,42 @@
   padding: 10px 12px;
   color: #FBFBFB;
 }
+.navbar-container .tab-container .tabs .tab::after{
+  display:block;
+  content: '';
+  height: 3px;
+  margin-top: 1px;
+  background: linear-gradient(124deg, #da1d00, #d31b1b, #cfa51a, #c2c519, #18c735, #19bdc5, #2519c9, #c300d4, #dd00f3);
+  background-clip:border-box;
+  background-size: 1000% 1000%;
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.navbar-container .tab-container .tabs .tab:hover{
+  cursor: pointer;
+  background: linear-gradient(124deg, #da1d00, #d31b1b, #cfa51a, #c2c519, #18c735, #19bdc5, #2519c9, #c300d4, #dd00f3);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 1800% 1800%;
+  animation: rainbow 10s ease infinite;
+  
+}
+.navbar-container .tab-container .tabs .tab:hover::after{
+  transform: scaleX(1);
+  animation: rainbow 10s ease infinite;
+}
+.navbar-container .tab-container .tabs .tab:nth-child(even):hover{
+  background: linear-gradient(124deg, #dd00f3, #c300d4,#2519c9, #19bdc5, #18c735, #c2c519,#cfa51a, #d31b1b, #da1d00 );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 1800% 1800%;
+  animation: rainbow 10s ease infinite;
+}
+.navbar-container .tab-container .tabs .tab:nth-child(even):hover::after{
+  background: linear-gradient(124deg, #dd00f3, #c300d4,#2519c9, #19bdc5, #18c735, #c2c519,#cfa51a, #d31b1b, #da1d00 );;  background-clip:border-box;
+  background-size: 700% 700%;
+  animation: rainbow 10s ease infinite;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -74,6 +116,7 @@
   }
   .navbar-container.open{
     width: 90%;
+
   }
   .navbar-container .initials-container img{
     padding-left: 17.5px;
@@ -114,6 +157,7 @@
     background-color: #fff;
     transform: translateZ(0);
     transition: all .3s;
+    
   }
   .navbar-container .mobile-icon div:nth-child(3){
     top: 10px;
@@ -124,25 +168,29 @@
   }
   .navbar-container .tab-container{
     max-height: 0;
-    transition: all .4s;
+    transition: all .2s;
     overflow: hidden;
+    transition-delay: .4s;
   }
   .navbar-container .tab-container.open{
     display: block;
     flex: 100%;
     max-height: 30vh;
     transition: all .4s;
+    transition-delay: .4s;
   }
   .navbar-container .tab-container .tabs{
     /* flex-direction: column; */
-    justify-content: center;
-    padding: 5px 25px;
-    
-    
+    justify-content: space-between;
+    padding: 5px 15px;
+    opacity: 0;
+    transition: all 0.1s ease;
+
   }
   .navbar-container .tab-container.open .tabs{
-    
-
+    opacity: 1;
+    transition: all 0.4s ease;
+    transition-delay: .4s;
   }
   .navbar-container .tab-container .tabs .tab{
     text-align: left;

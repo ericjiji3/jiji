@@ -1,149 +1,224 @@
 .projects-container{
-    padding: 100px 150px;
+    padding: 100px 150px 0;
     display: flex;
-    border: 5px solid #0C0F11;
     text-align: center;
     flex-wrap: wrap;
     background-color: #FBFBFB;
+    border-top: 5px solid #0C0F11;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: -120px;
+    overflow: hidden;
+}
+
+.projects-container .header.animate{
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 1s ease;
 }
 .projects-container .header{
     flex: 100%;
     font-size: 46px;
     text-align: left;
     margin: 50px 0;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 1s ease;
 }
-.projects-container .project1{
-    height: 350px;
+.projects-container .projects{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
     width: 100%;
-    flex: 25%;
+    padding-bottom: 60px;
+
+}
+.projects-container .projects .border-animate{
+    position: absolute;
+    width: calc(100% + 20px);
+    height: calc(100% + 50px);
+    top: -20px;
+    left: -20px;
+    pointer-events: none;
+    background-image: radial-gradient(rgb(26, 26, 26) 30%, transparent 30%), radial-gradient(rgb(26, 26, 26) 30%, transparent 30%);
+    background-position: 0px 0px, 20px 20px;
+    background-size: 8px 8px;
+    transition: inherit;
+    animation: 4s linear 0s infinite normal none running borderAni;
+}
+.projects-container .projects .project-container{
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #0C0F11;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+.projects-container .projects .project-container.grid-col-1{
+    /* grid-column-start: 1;
+    grid-column-end: span 2; */
+}
+.projects-container .projects .project-container.grid-row-2{
+    grid-row: span 2;
+}
+.projects-container .projects .project-container.grid-col-2{
+    grid-column: span 2;
+}
+.projects-container .projects .project-container .project1, .projects .project-container .project2, .projects .project-container .project4{
+    width: 95%;
+    margin: auto;
+    height: 90%;
+    position: relative;
+}
+.projects-container .projects.animate .project-container.one{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+.projects-container .projects .project-container.one{
+    transform: translateX(-150%);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+.projects-container .projects .project-container .project1{
     background-image: url('../images/projects/jordon.jpeg');
     background-size: cover;
-    background-position: 75% 50%;
+    background-position: 75% 75%;
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
-    border: 5px solid #0C0F11;
-    margin: 0px 10px 20px 0;
+    border: 3px solid #0C0F11;
+    
 }
-.projects-container .project1:hover{
+.projects-container .projects .project-container .project1:hover{
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
 }
-.projects-container .project1 .speech-bubble{
-    width: 180px;
-    position: absolute;
-    top: 1%;
-    right: 40%;
+.projects-container .projects.animate .project-container.two{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all .75s ease;
 }
-.projects-container .project1 .speech-bubble img{
-    width: 180px;
+.projects-container .projects .project-container.two{
+    transform: translateY(-200%);
+    opacity: 0;
+    transition: all .75s ease;
 }
-.projects-container .project1 .speech-bubble span{
-    position: absolute;
-    width: 180px;
-    right: 2%;
-    top: 45%;
-    text-align: center;
-    font-size: 12px;
-}
-.projects-container .project2{
-    height: 350px;
-    flex: 45%;
-    width: 100%;
+.projects-container .projects .project-container .project2{
     background-image: url('../images/projects/southcloud.jpg');
     background-size: cover;
     background-position: 75% 50%;
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
-    border: 5px solid #0C0F11;
-    margin: 0px 10px 20px;
+    border: 3px solid #0C0F11;
 }
-.projects-container .project2:hover{
+.projects-container .projects .project-container .project2:hover{
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
 }
-.projects-container .project2 .speech-bubble{
-    width: 185px;
-    position: absolute;
-    top: 54%;
-    right: 2%;
+.projects-container .projects.animate .project-container.three{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 1.25s ease;
 }
-.projects-container .project2 .speech-bubble img{
-    width: 185px;
+.projects-container .projects .project-container.three{
+    transform: translateX(200%);
+    opacity: 0;
+    transition: all 1.25s ease;
 }
-.projects-container .project2 .speech-bubble span{
-    position: absolute;
-    width: 160px;
-    right: 8%;
-    top: 42%;
-    text-align: center;
-    font-size: 12px;
-}
-.projects-container .project3{
-    height: 350px;
-    flex: 20%;
-    width: 100%;
+.projects-container .projects .project-container .project3{
     background-image: url('../images/projects/360connect.jpg');
     background-size: cover;
     background-position: 75% 50%;
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
-    border: 5px solid #0C0F11;
-    margin: 0px 0px 20px 10px;
+    border: 3px solid #0C0F11;
+    height: 95%;
+    width: 95%;
+    margin: auto;
+    position: relative;
 }
-.projects-container .project3:hover{
+.projects-container .projects .project-container .project3:hover{
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
 }
-.projects-container .project3 .speech-bubble{
-    width: 190px;
-    position: absolute;
-    top: 25%;
-    right: 30%;
+.projects-container .projects.animate .project-container.four{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1.25s ease;
 }
-.projects-container .project3 .speech-bubble img{
-    width: 190px;
+.projects-container .projects .project-container.four{
+    transform: translateY(200%);
+    opacity: 0;
+    transition: all 1.25s ease;
 }
-.projects-container .project3 .speech-bubble span{
-    position: absolute;
-    width: 190px;
-    right: 0%;
-    top: 46%;
-    text-align: center;
-    font-size: 12px;
-}
-.projects-container .project4{
-    height: 350px;
-    flex: 20%;
-    width: 100%;
+.projects-container .projects .project-container .project4{
     background-image: url('../images/projects/mahone.jpg');
     background-size: cover;
-    background-position: 75% 35%;
+    background-position: 75% 15%;
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
-    border: 5px solid #0C0F11;
-    margin: 0px 0px 20px 0px;
+    border: 3px solid #0C0F11;
+    height: 92%;
+    width: 97.5%;
+    margin: auto;
+    position: relative;
 }
-.projects-container .project4:hover{
+.projects-container .projects .project-container .project4:hover{
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
 }
-.projects-container .project4 .speech-bubble{
+.projects-container .projects .project-container .speech-bubble.medium img{
     width: 180px;
+    position: absolute;
+    left: 0%;
+}
+.projects-container .projects .project-container .speech-bubble.medium span{
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    
+}
+.projects-container .projects .project-container .speech-bubble.medium2 img{
+    width: 250px;
     position: absolute;
     top: 20%;
-    right: 5%;
+    right: 0%;
 }
-.projects-container .project4 .speech-bubble img{
-    width: 180px;
-}
-.projects-container .project4 .speech-bubble span{
+.projects-container .projects .project-container .speech-bubble.medium2 span{
     position: absolute;
-    width: 130px;
-    right: 15%;
-    top: 41%;
-    text-align: center;
-    font-size: 12px;
+    width: 200px;
+    top: 51%;
+    right: 6%;
+    
 }
+.projects-container .projects .project-container .speech-bubble.large img{
+    width: 300px;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.projects-container .projects .project-container .speech-bubble.large span{
+    position: absolute;
+    width: 200px;
+    top: 54%;
+    left: 20%;
+    
+}
+.projects-container .projects .project-container .speech-bubble.large2 img{
+    width: 250px;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+}
+.projects-container .projects .project-container .speech-bubble.large2 span{
+    position: absolute;
+    width: 150px;
+    top: 40%;
+    right: 25%;
+    
+}
+
 @media(max-width: 1400px){
     .projects-container{
         padding: 75px 150px;
@@ -151,88 +226,62 @@
     .projects-container .header{
         font-size: 40px;
     }
-    .projects-container .project1{
-        height: 150px;
-        background-position: 75% 75%;
+    .projects-container .projects .project-container .project3{
+        background-position: 50% 50%;
     }
-    .projects-container .project1 .speech-bubble{
-        width: 100px;
+    .projects-container .projects .project-container .speech-bubble.medium img{
+        width: 150px;
+        position: absolute;
+        left: 0%;
+    }
+    .projects-container .projects .project-container .speech-bubble.medium span{
+        position: absolute;
+        top: 20%;
+        left: 8%;
+        font-size: 15px;
+        
+    }
+    .projects-container .projects .project-container .speech-bubble.medium2 img{
+        width: 225px;
+        position: absolute;
+        top: 20%;
+        right: 0%;
+    }
+    .projects-container .projects .project-container .speech-bubble.medium2 span{
+        position: absolute;
+        width: 225px;
+        top: 50%;
+        right: 0%;
+        font-size: 15px;
+    }
+    .projects-container .projects .project-container .speech-bubble.large img{
+        width: 200px;
         position: absolute;
         top: 35%;
-        right: 60%;
+        left: 10%;
     }
-    .projects-container .project1 .speech-bubble img{
-        width: 100px;
-    }
-    .projects-container .project1 .speech-bubble span{
+    .projects-container .projects .project-container .speech-bubble.large span{
         position: absolute;
-        width: 100px;
-        right: 1%;
-        top: 41%;
-        text-align: center;
-        font-size: 10px;
+        width: 125px;
+        top: 46%;
+        left: 21%;
+        font-size: 15px;
     }
-    .projects-container .project2{
-        height: 150px;
-    }
-    .projects-container .project2 .speech-bubble{
-        width: 150px;
+    .projects-container .projects .project-container .speech-bubble.large2 img{
+        width: 200px;
         position: absolute;
         top: 10%;
-        right: 5%;
+        right: 20%;
     }
-    .projects-container .project2 .speech-bubble img{
-        width: 150px;
-    }
-    .projects-container .project2 .speech-bubble span{
+    .projects-container .projects .project-container .speech-bubble.large2 span{
         position: absolute;
         width: 150px;
-        right: 1%;
-        top: 41%;
-        text-align: center;
-        font-size: 10px;
+        top: 34%;
+        right: 24%;
+        font-size: 15px;
     }
-    .projects-container .project3{
-        height: 150px;
-    }
-    .projects-container .project3 .speech-bubble{
-        width: 110px;
-        position: absolute;
-        top: 10%;
-        right: 5%;
-    }
-    .projects-container .project3 .speech-bubble img{
-        width: 110px;
-    }
-    .projects-container .project3 .speech-bubble span{
-        position: absolute;
-        width: 80px;
-        right: 13%;
-        top: 35%;
-        text-align: center;
-        font-size: 10px;
-    }
-    .projects-container .project4{
-        height: 150px;
-        background-position: 75% 25%;
-    }
-    .projects-container .project4 .speech-bubble{
-        width: 175px;
-        position: absolute;
-        top: 2.5%;
-        right: 35%;
-    }
-    .projects-container .project4 .speech-bubble img{
-        width: 175px;
-    }
-    .projects-container .project4 .speech-bubble span{
-        position: absolute;
-        width: 100px;
-        right: 22.5%;
-        top: 40%;
-        text-align: center;
-        font-size: 10px;
-    }
+    
+
 }
 @media(max-width: 1200px){
     .projects-container .header{
@@ -251,49 +300,108 @@
     .projects-container{
         padding: 100px 50px;
     }
-    .projects-container .project1{
-        flex: 50%;
-        margin: 0 2.5px 5px 0;
-    }
-    .projects-container .project2{
-        flex: 35%;
-        margin: 0 0px 5px 2.5px;
-    }
-    .projects-container .project3{
-        flex: 25%;
-        margin: 5px 2.5px 5px 0px;
-    }
-    .projects-container .project4{
-        flex: 70%;
-        margin: 5px 0px 5px 2.5px;
-    }
 }
 @media(max-width: 600px){
     .projects-container{
         padding: 100px 25px 0;
-        border: none;
-        border-top: 5px solid #0C0F11;
-        border-radius: 12px;
-        margin-bottom: -45px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        margin-bottom: -100px;
+        
+      }
+      .projects-container .projects{
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 150px);
     }
+    
     .projects-container .header{
         font-size: 25px;
     }
-    .projects-container .project1{
-        flex: 50%;
-        margin: 0 2.5px 5px 0;
+    .projects-container .projects .project-container{
+        border-width: 3px;
     }
-    .projects-container .project2{
-        flex: 35%;
-        margin: 0 0px 5px 2.5px;
+    .projects-container .projects .project-container .project1, .projects .project-container .project2, .projects .project-container .project4{
+        width: 90%;
+        display: block;
+        margin: auto;
+        height: 90%;
+        position: relative;
     }
-    .projects-container .project3{
-        flex: 25%;
-        margin: 5px 0px;
+    .projects-container .projects .project-container .project1{
+        border: 1.5px solid #0C0F11;
     }
-    .projects-container .project4{
-        flex: 70%;
-        margin: 5px 0px;
+    .projects-container .projects .project-container .project2{
+        border: 1.5px solid #0C0F11;
     }
-
+    .projects-container .projects .project-container .project3{
+        border: 1.5px solid #0C0F11;
+        height: 95%;
+        width: 90%;
+        margin: auto;
+        position: relative;
+    }
+    .projects-container .projects .project-container .project4{
+        border: 1.5px solid #0C0F11;
+        width: 95%;
+        height: 90%;
+    }
+    .projects-container .projects .project-container .speech-bubble.medium img{
+        width: 80px;
+        position: absolute;
+        left: 0%;
+    }
+    .projects-container .projects .project-container .speech-bubble.medium span{
+        position: absolute;
+        top: 22%;
+        left: 15%;
+        font-size: 8px;
+    }
+    .projects-container .projects .project-container .speech-bubble.medium2 img{
+        width: 110px;
+        position: absolute;
+        top: 10%;
+        right: -5%;
+    }
+    .projects-container .projects .project-container .speech-bubble.medium2 span{
+        position: absolute;
+        width: 85px;
+        top: 40%;
+        right: 8%;
+        font-size: 8px;
+    }
+    .projects-container .projects .project-container .speech-bubble.large img{
+        width: 90px;
+        position: absolute;
+        top: 35%;
+        left: 10%;
+    }
+    .projects-container .projects .project-container .speech-bubble.large span{
+        position: absolute;
+        width: 75px;
+        top: 44%;
+        left: 18%;
+        font-size: 8px;
+    }
+    .projects-container .projects .project-container .speech-bubble.large2 img{
+        width: 140px;
+        position: absolute;
+        top: 5%;
+        right: 2.5%;
+    }
+    .projects-container .projects .project-container .speech-bubble.large2 span{
+        position: absolute;
+        width: 85px;
+        top: 43%;
+        right: 16%;
+        font-size: 8px;
+    }
+}
+@keyframes borderAni{
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(20px, 20px);
+    }
 }
