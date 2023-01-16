@@ -4,7 +4,6 @@ import p3pic from './images/p3pic.png';
 import mail from './images/icons/mail.png';
 import map from './images/icons/map.png';
 import phoneIcon from './images/icons/phone.png';
-import { Parallax, useParallax } from 'react-scroll-parallax';
 import emailjs from '@emailjs/browser';
 
 function Contact({reference, onClick}) {
@@ -37,7 +36,7 @@ function Contact({reference, onClick}) {
         var validate = true;
         Object.keys(data).forEach(function(field, index){
             console.log(data[field])
-            if(field == 'email'){
+            if(field === 'email'){
                 var email = data[field];
                 email.toLowerCase();
                 if(!email.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) || !email){
@@ -45,13 +44,13 @@ function Contact({reference, onClick}) {
                     setEmailErr(true);
                 }
             }
-            if(field == 'name'){
+            if(field === 'name'){
                 if(!data[field]){
                     validate = false;
                     setNameErr(true);
                 }
             }
-            if(field == 'phone'){
+            if(field === 'phone'){
                 if(!data[field]){
                     validate = false;
                     setPhoneErr(true);
@@ -127,7 +126,7 @@ function Contact({reference, onClick}) {
                     <h2>Lets Get to Work</h2>
                     <h3>Call, Text, or email . . . I’ll respond within  24 hours!</h3>
                 </div>
-                <img src={p3pic}/>
+                <img src={p3pic} alt="oops"/>
             </div>
             
             <div className={isVisible ? 'form-container animate' : 'form-container'}>
@@ -160,15 +159,15 @@ function Contact({reference, onClick}) {
                 </form>
                 <div className="contact-icons">
                     <div className="phone-container">
-                        <img src={phoneIcon}/>
+                        <img src={phoneIcon} alt="oops"/>
                         <span>713-885-7540</span>
                     </div>
                     <div className="map-container">
-                        <img src={map}/>
+                        <img src={map} alt="oops"/>
                         <span>Austin, TX</span>
                     </div>
                     <div className="mail-container">
-                        <img src={mail}/>
+                        <img src={mail} alt="oops"/>
                         <span>eric.ji3333@gmail.com</span>
                     </div>
                 </div>

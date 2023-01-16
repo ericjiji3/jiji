@@ -1,12 +1,11 @@
 import './styles/Home.css';
 import Testimonials from './Testimonials.js';
-import {useRef} from "react";
 import p1Pic from "./images/p1pic.png";
 import linkedIn from "./images/icons/linkedIn.png";
 import twitter from "./images/icons/twitter.png";
 import github from "./images/icons/github.png";
 import { Parallax} from 'react-scroll-parallax';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link} from 'react-scroll';
 
 function Home({reference, click}) {
     
@@ -24,18 +23,18 @@ function Home({reference, click}) {
                 <Parallax translateX={['0vw', '-25vw']} opacity={[1,0]} startScroll={0} endScroll={1000}>
                 <div className="buttons">
                     <div className="button-container">
-                        <a className="button" onClick={(e) => click(e)}><Link activeClass="active" to="contact" spy={true} smooth={true} duration={750} ><span className="contact-span">Hire Me</span></Link></a>
+                        <span className="button" onClick={(e) => click(e)}><Link activeClass="active" to="contact" spy={true} smooth={true} duration={750} ><span className="contact-span">Hire Me</span></Link></span>
                     </div>
                     <div className="button-container">
-                        <a className="button" onClick={(e) => click(e)}><Link activeClass="active" to="work" spy={true} smooth={true} duration={750} ><span className="work-span">View my work</span></Link></a>
+                        <span className="button" onClick={(e) => click(e)}><Link activeClass="active" to="work" spy={true} smooth={true} duration={750} ><span className="work-span">View my work</span></Link></span>
                     </div>
                 </div>
                 </Parallax>
                 <Parallax translateX={['0vw', '-25vw']} opacity={[1,0]} startScroll={0} endScroll={1000}>
                 <div className="socials">
-                    <a className="twitter"><img src={twitter}/></a>
-                    <a className="github"><img src={github}/></a>
-                    <a className="linkedin"><img src={linkedIn}/></a>
+                    <span className="twitter"><img src={twitter} alt="oops"/></span>
+                    <span className="github"><img src={github} alt="oops"/></span>
+                    <span className="linkedin"><img src={linkedIn} alt="oops"/></span>
                 </div>
                 </Parallax>
             </div>
@@ -43,7 +42,7 @@ function Home({reference, click}) {
             
                 <div className="column2">
                         <Parallax translateX={['0vw', '25vw']} opacity={[1,0]} startScroll={0} endScroll={1000}>
-                            <img src={p1Pic}/>
+                            <img src={p1Pic} alt="oops"/>
                         </Parallax>
                 </div>
            

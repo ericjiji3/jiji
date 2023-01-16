@@ -1,13 +1,13 @@
 
 import './App.css';
-import {useEffect, useRef, useState} from "react";
+import {useRef, useState} from "react";
 import Home from './Home.js';
 import Projects from './Projects.js';
 import About from './About.js';
 import Contact from './Contact.js';
 import initials from './images/initials.png';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 function App() {
   const home = useRef(null);
@@ -19,8 +19,8 @@ function App() {
 
 
 
-  const buttonScroll = (e) => {
-    if(e.target.className == "contact-span"){
+  buttonScroll = (e) => {
+    if(e.target.className === "contact-span"){
       window.scrollTo({
         top: contact.current.offsetTop,
         behavior: 'smooth'
@@ -33,7 +33,7 @@ function App() {
     }
   }
 
-  const [selectedTab, setSelectedTab] = useState(0);
+
   const toggleMobile = () =>{
     setOpen(!open);
     console.log(open);
@@ -43,7 +43,7 @@ function App() {
       <div className="App">
           <div className={open ? 'navbar-container open' : 'navbar-container'}>
               <div className="initials-container">
-                  <img src={initials}/>
+                  <img src={initials} alt="oops"/>
               </div>
               <div className="mobile-icon" onClick={() => toggleMobile()}>
                   <div></div>

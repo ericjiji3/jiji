@@ -1,7 +1,6 @@
 import './styles/About.css';
 import React, {useEffect, useState, useRef} from 'react';
 import p2pic from './images/p2pic.png';
-import { Parallax, useParallax } from 'react-scroll-parallax';
 
 function About({reference, onClick}) {
     const containerRef = useRef(null);
@@ -10,12 +9,13 @@ function About({reference, onClick}) {
         const [entry] = entries;
         setIsVisible(entry.isIntersecting);
     }
-    const options ={
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.25
-    }
+    
     useEffect(() => {
+        const options ={
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.25
+        }
         const observer = new IntersectionObserver(callbackFunction, options)
         if(containerRef.current){
             observer.observe(containerRef.current);
