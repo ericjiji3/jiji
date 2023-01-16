@@ -195,6 +195,7 @@
   }
   .navbar-container .tab-container .tabs .tab{
     text-align: left;
+    font-size: 10px;
   }
 }
 .App-header {

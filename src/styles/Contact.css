@@ -145,6 +145,12 @@
 .contact-container .header-image .header-container h2{
     font-size: 46px;
     margin: 50px 0 5px 0;
+    background: linear-gradient(124deg, #19bdc5, #da1d00, #d31b1b, #cfa51a, #2519c9, #c300d4, #dd00f3,#c2c519, #18c735);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 1800% 1800%;
+    animation: rainbow 14s ease infinite;
 }
 .contact-container .header-image .header-container h3{
     font-size: 20px;

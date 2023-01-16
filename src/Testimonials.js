@@ -14,7 +14,14 @@ function Testimonials() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
-
+        responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+                speed: 7000
+            }
+        }
+        ]
         
       };
 

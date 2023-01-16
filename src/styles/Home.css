@@ -22,6 +22,12 @@
 .home-container .column1 .heading .job{
     font-size: 46px;
     margin: 0 0 5px;
+    background: linear-gradient(124deg, #da1d00, #d31b1b, #cfa51a, #c2c519, #18c735, #19bdc5, #2519c9, #c300d4, #dd00f3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 1800% 1800%;
+    animation: rainbow 14s ease infinite;
 }
 .home-container .column1 .heading .job-description{
     font-size: 20px;

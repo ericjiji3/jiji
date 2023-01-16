@@ -60,6 +60,12 @@
 .about-container .bio h2{
     font-size: 46px;
     margin: 150px 0 15px 0;
+    background: linear-gradient(124deg, #2519c9, #c300d4, #dd00f3,#c2c519, #18c735, #19bdc5, #da1d00, #d31b1b, #cfa51a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 1800% 1800%;
+    animation: rainbow 14s ease infinite;
 }
 .about-container .bio p{
     font-size: 16px;
@@ -206,6 +212,7 @@
     .about-container .bio h2{
         font-size: 25px;
         margin-top: 20px;
+        
     }
     .about-container .bio p{
         font-size: 8px;
