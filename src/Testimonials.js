@@ -1,24 +1,39 @@
 import './styles/Testimonials.css';
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState,useRef} from 'react';
 import testimonialData from './TestimonialData.js';
+import Slider from "react-slick";
 
 function Testimonials() {
-    const [currIndex, setCurrIndex] = useState(0);
+    const testRef = useRef([]);
 
-    useEffect(()=>{
-        const interval = setInterval(()=>{
-            rotateTestimonials();
-        }, 3500);
-        return () => clearInterval(interval);
-    })
-    const rotateTestimonials = () =>{
-        setCurrIndex((currIndex + 1) % testimonialData.length);
-    }
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+
+        
+      };
+
+
+    
     return (
         <div className="testimonials-container">
-            <span className="testimonial">{testimonialData[currIndex].quote} - {testimonialData[currIndex].author}</span>
+            {/* <span ref={testRef} className="testimonial">{testimonialData[currIndex].quote} - {testimonialData[currIndex].author}</span> */}
+            <Slider {...settings}>
+                {testimonialData.map((test, index) => (
+                            <span ref={el => testRef.current[index] = el} className="testimonial" key={test.key}>{test.quote} - {test.author}</span>
+                    ))
+                }
+
+            </Slider>
+            
         </div>
-    );
+        
+        );
 }
 
 export default Testimonials;

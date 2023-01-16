@@ -5,12 +5,39 @@
     border: 5px solid #0C0F11;
     border-radius: 45px;
     margin: 30px 0 0px 0;
+    position:relative;
+
+}
+
+
+
+.slick-slider{
+    padding: 0 15px;
+    position:relative;
+    height: 100%;
+}
+.slick-track {
+    display: flex;
+  }
+  .slick-track .slick-slide {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+.slick-prev, .slick-next{
+    display: none!important;
+}
+.slick-prev::before, .slick-next::before{
+    display: none;
 }
 .testimonials-container .testimonial{
     width: 100%;
     display: block;
     text-align: center;
-    padding: 75px 0;
+    padding: 75px 0px;
+    height: 100%;
+
 }
 @media(max-width: 1200px){
     .testimonials-container{

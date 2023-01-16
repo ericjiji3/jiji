@@ -22,11 +22,11 @@ function Home({reference, click}) {
                 </Parallax>
                 <Parallax translateX={['0vw', '-25vw']} opacity={[1,0]} startScroll={0} endScroll={1000}>
                 <div className="buttons">
-                    <div className="button-container">
-                        <span className="button" onClick={(e) => click(e)}><Link activeClass="active" to="contact" spy={true} smooth={true} duration={750} ><span className="contact-span">Hire Me</span></Link></span>
+                    <div className="button-container" onClick={(e) => click(e)}>
+                    <Link activeClass="active" to="contact" spy={true} smooth={true} duration={750} ><span className="button"><span className="contact-span">Hire Me</span></span></Link>
                     </div>
-                    <div className="button-container">
-                        <span className="button two" onClick={(e) => click(e)}><Link activeClass="active" to="work" spy={true} smooth={true} duration={750} ><span className="work-span">View my work</span></Link></span>
+                    <div className="button-container" onClick={(e) => click(e)}>
+                    <Link activeClass="active" to="work" spy={true} smooth={true} duration={750} ><span className="button two" ><span className="work-span">View my work</span></span></Link>
                     </div>
                 </div>
                 </Parallax>

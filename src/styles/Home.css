@@ -188,6 +188,9 @@
         padding: 15px 10px;
         width: 35%;
     }
+    .home-container .column1 .buttons .button-container .button:hover{
+        width: 50%;
+    }
     .home-container .column1 .socials span img{
         width: 20px;
     }
@@ -221,6 +224,7 @@
     .home-container .column1 .buttons{
         font-size: 10px;
     }
+    
     .home-container .column2{
         flex: 100%;
         position: absolute;

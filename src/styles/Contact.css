@@ -280,7 +280,7 @@
     border-right: 3px solid #FBFBFB;
     border-top: 3px solid #FBFBFB;
     content: '';
-    right: 45px;
+    right: 50%;
     top: 26px;
     position: absolute;
 }
@@ -494,16 +494,19 @@
         flex: 100%;
         margin: 5px 0;
     }
+    .contact-container .form-container .form label input{
+        /* width: 9%; */
+    }
     .contact-container .form-container .form label span{
         font-size: 12px;
     }
     .contact-container .form-container .form .name-input{
-        flex: 45%;
+        flex: 30%;
         margin: 5px 5px 15px 0;
     }
     .contact-container .form-container .form .company-input{
-        flex: 45%;
-        margin-left: 5px;
+        flex: 30%;
+        margin: 5px 0 10px 5px;
     }
     .contact-container .form-container .form label textarea{
         height: 50px;
@@ -732,7 +735,7 @@
     .contact-container .form-container .form .submit-butt .checkmark::after{
         height: 10px;
         width: 5px;
-        right: 23px;
+        right: 50%;
         top: 20px;
     }
     .contact-container .form-container .form .submit-butt.success .checkmark::after{
