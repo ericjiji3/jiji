@@ -1,5 +1,5 @@
 import './styles/Contact.css';
-import React, {useEffect, useState, useRef} from 'react';
+import React, {useEffect, useState, useRef, useCallback} from 'react';
 import p3pic from './images/p3pic.png';
 import mail from './images/icons/mail.png';
 import map from './images/icons/map.png';
@@ -25,7 +25,7 @@ function Contact({reference, onClick}) {
         root: null,
         rootMargin: '0px',
         threshold: .5
-    }
+    };
     const form = useRef();
 
     function validateFields(data){
@@ -99,6 +99,7 @@ function Contact({reference, onClick}) {
             setIsVisible(entry.isIntersecting);
             console.log(isVisible);
         }
+        
         const observer = new IntersectionObserver(callbackFunction, options)
         const observedContact = containerRef.current;
         if(observedContact){
@@ -109,7 +110,7 @@ function Contact({reference, onClick}) {
                 observer.unobserve(observedContact)
             }
         }
-    }, [containerRef, options])
+    }, [containerRef, isVisible])
 
     return (
         <div className="contact-container" ref={reference}>

@@ -32,7 +32,7 @@ function About({reference, onClick}) {
     return (
             <div className="about-container" ref={reference}>
                 <div className={isVisible ? 'image-container animate' : 'image-container'} ref={containerRef}>
-                    <img src={p2pic}/>
+                    <img src={p2pic} alt="oops"/>
                 </div>
                 
                 <div className={isVisible ? 'bio animate' : 'bio'}>
