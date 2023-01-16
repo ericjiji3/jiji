@@ -83,12 +83,12 @@
 .projects-container .projects.animate .project-container.one{
     transform: translateX(0%);
     opacity: 1;
-    transition: all 1s ease;
+    transition: all 1.25s ease;
 }
 .projects-container .projects .project-container.one{
     transform: translateX(-150%);
     opacity: 0;
-    transition: all 1s ease;
+    transition: all 1.25s ease;
 }
 .projects-container .projects .project-container .project1{
     background-image: url('../images/projects/jordon.jpeg');
@@ -106,12 +106,12 @@
 .projects-container .projects.animate .project-container.two{
     transform: translateY(0%);
     opacity: 1;
-    transition: all 1s ease;
+    transition: all 1.25s ease;
 }
 .projects-container .projects .project-container.two{
     transform: translateY(-200%);
     opacity: 0;
-    transition: all 1s ease;
+    transition: all 1.25s ease;
 }
 .projects-container .projects .project-container .project2{
     background-image: url('../images/projects/southcloud.jpg');
@@ -128,12 +128,12 @@
 .projects-container .projects.animate .project-container.three{
     transform: translateX(0%);
     opacity: 1;
-    transition: all 1s ease;
+    transition: all 1.25s ease;
 }
 .projects-container .projects .project-container.three{
     transform: translateX(200%);
     opacity: 0;
-    transition: all 1s ease;
+    transition: all 1.25s ease;
 }
 .projects-container .projects .project-container .project3{
     background-image: url('../images/projects/360connect.jpg');
@@ -154,12 +154,12 @@
 .projects-container .projects.animate .project-container.four{
     transform: translateY(0%);
     opacity: 1;
-    transition: all 1s ease;
+    transition: all 1.25s ease;
 }
 .projects-container .projects .project-container.four{
     transform: translateY(200%);
     opacity: 0;
-    transition: all 1s ease;
+    transition: all 1.25s ease;
 }
 .projects-container .projects .project-container .project4{
     background-image: url('../images/projects/mahone.jpg');
