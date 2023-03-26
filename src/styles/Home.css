@@ -152,6 +152,9 @@
         font-size: 15px;
         margin: 0;
     }
+    .home-container .column1 .buttons .button-container .button{
+        width: 35%;
+    }
 }
 @media(max-width: 1200px){
     .home-container .column1 .heading{
