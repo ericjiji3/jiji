@@ -2,7 +2,6 @@ import './styles/Home.css';
 import Testimonials from './Testimonials.js';
 import p1Pic from "./images/p1pic.png";
 import linkedIn from "./images/icons/linkedIn.png";
-import twitter from "./images/icons/twitter.png";
 import github from "./images/icons/github.png";
 import ig from "./images/icons/ig.png";
 import linktree from "./images/icons/linktree.png";
