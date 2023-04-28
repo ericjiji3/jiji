@@ -73,7 +73,7 @@ function Projects({reference, onClick}) {
                     
                     
 
-                    <a className="project-container four grid-col-2" href="https://mahone.netlify.app/" target="_blank" rel="noreferrer">
+                    <a className="project-container four grid-col-2" href="https://austinmahone.com/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project4">
                         <div className="speech-bubble large2">
@@ -84,6 +84,57 @@ function Projects({reference, onClick}) {
                         </div>
                         </div>
                     </a>
+
+                    <a className="project-container five grid-row-2" href="https://studiomid22.netlify.app/" target="_blank" rel="noreferrer">
+                        <span className="border-animate"></span>
+                        <div className="project5">
+                        <div className="speech-bubble medium3">
+                            <img src={speech} alt="oops"/>
+                            <span>
+                                Studio MiD 22
+                            </span>
+                        </div>
+                        </div>
+                    </a>
+
+                    <a className="project-container six grid-col-1" href="https://www.scord.app/" target="_blank" rel="noreferrer">
+                        <span className="border-animate"></span>
+                        <div className="project6">
+                        <div className="speech-bubble medium">
+                            <img src={speech} alt="oops"/>
+                            <span>
+                                Scord
+                            </span>
+                        </div>
+                        </div>
+                    </a>
+
+                    <a className="project-container seven grid-col-1" href="https://ericji3333.wixsite.com/texbox-llc" target="_blank" rel="noreferrer">
+                        <span className="border-animate"></span>
+                        <div className="project7">
+                        <div className="speech-bubble medium2">
+                            <img src={speech} alt="oops"/>
+                            <span>
+                                Texbox
+                            </span>
+                        </div>
+                        </div>
+                    </a>
+
+                    <a className="project-container eight grid-col-2" href="https://ericji3333.wixsite.com/fresh-heim" target="_blank" rel="noreferrer">
+                        <span className="border-animate"></span>
+                        <div className="project8">
+                        <div className="speech-bubble large2">
+                            <img src={speech} alt="oops"/>
+                            <span>
+                                Fresh Heim
+                            </span>
+                        </div>
+                        </div>
+                    </a>
+
+
+                    
                 </div>
                 
             </div>

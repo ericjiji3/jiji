@@ -5,7 +5,7 @@ import Home from './Home.js';
 import Projects from './Projects.js';
 import About from './About.js';
 import Contact from './Contact.js';
-import initials from './images/initials.png';
+import initials from './images/logo.png';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import { Link } from 'react-scroll';
 

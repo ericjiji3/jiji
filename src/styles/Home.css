@@ -76,12 +76,22 @@
 }
 .home-container .column1 .socials{
     display: flex;
+    align-items: center;
 }
-.home-container .column1 .socials .twitter{
-    padding: 0 5px 0 0;
+.home-container .column1 .socials a{
+    padding: 0 7.5px;
 }
-.home-container .column1 .socials .twitter:hover, .socials .linkedin:hover, .socials .github:hover{
-    animation: rainbowIcon 30s ease infinite;
+.home-container .column1 .socials .ig{
+    padding: 0 7.5px 0 0;
+}
+.home-container .column1 .socials a img{
+    width: 25px;
+}
+.home-container .column1 .socials .twitch img{
+    width: 20px
+}
+.home-container .column1 .socials a:hover{
+    animation: rainbowIcon 60s ease infinite;
     transform: scale(1.1);
     transition: all .5s ease;
 }
@@ -172,7 +182,7 @@
     .home-container .column1 .buttons{
         font-size: 12px;
     }
-    .home-container .column1 .socials span img{
+    .home-container .column1 .socials a img{
         width: 25px;
     }
 }
@@ -200,7 +210,7 @@
     .home-container .column1 .buttons .button-container .button:hover{
         width: 50%;
     }
-    .home-container .column1 .socials span img{
+    .home-container .column1 .socials a img{
         width: 20px;
     }
     .home-container .column2{
@@ -245,6 +255,18 @@
         width: 175px;
         position: unset;
         right: 0%;
+    }
+    .home-container .column1 .socials a{
+        padding: 0 5px;
+    }
+    .home-container .column1 .socials .ig{
+        padding: 0 5px 0 0;
+    }
+    .home-container .column1 .socials a img{
+        width: 15px;
+    }
+    .home-container .column1 .socials .twitch img{
+        width: 12.5px;
     }
 }
 @keyframes slideLeft{

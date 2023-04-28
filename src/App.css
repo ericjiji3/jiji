@@ -30,7 +30,7 @@
   z-index: 2;
 }
 .navbar-container .initials-container img{
-  width: 100px;
+  width: 50px;
   padding-left: 30px;
   
 }
@@ -109,7 +109,7 @@
 
   .navbar-container{
     justify-content: space-between;
-    width: 40%;
+    width: 35%;
     flex-wrap: wrap;
     transition: all .4s ease;
     border-radius: 12px;
@@ -121,7 +121,7 @@
   }
   .navbar-container .initials-container img{
     padding-left: 17.5px;
-    width: 70px;
+    width: 30px;
   }
   .navbar-container .initials-container, .mobile-icon{
     /* padding: 0 5px;  */

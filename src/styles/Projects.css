@@ -35,7 +35,7 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: repeat(4, 300px);
     width: 100%;
     padding-bottom: 60px;
 
@@ -74,7 +74,7 @@
 .projects-container .projects .project-container.grid-col-2{
     grid-column: span 2;
 }
-.projects-container .projects .project-container .project1, .projects .project-container .project2, .projects .project-container .project4{
+.projects-container .projects .project-container .project1, .projects .project-container .project2, .projects .project-container .project3, .projects .project-container .project4, .projects .project-container .project5, .projects .project-container .project6, .projects .project-container .project7, .projects .project-container .project8{
     width: 95%;
     margin: auto;
     height: 90%;
@@ -152,12 +152,12 @@
     filter: grayscale(0%);
 }
 .projects-container .projects.animate .project-container.four{
-    transform: translateY(0%);
+    transform: translateX(0%);
     opacity: 1;
     transition: all 1.25s ease;
 }
 .projects-container .projects .project-container.four{
-    transform: translateY(200%);
+    transform: translateX(-200%);
     opacity: 0;
     transition: all 1.25s ease;
 }
@@ -174,6 +174,106 @@
     position: relative;
 }
 .projects-container .projects .project-container .project4:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+.projects-container .projects.animate .project-container.five{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container.five{
+    transform: translateY(200%);
+    opacity: 0;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container .project5{
+    background-image: url('../images/projects/mid22.jpg');
+    background-size: cover;
+    background-position: 50%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    border: 3px solid #0C0F11;
+    height: 95%;
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+.projects-container .projects .project-container .project5:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+.projects-container .projects.animate .project-container.six{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container.six{
+    transform: translateY(200%);
+    opacity: 0;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container .project6{
+    background-image: url('../images/projects/scord.jpeg');
+    background-size: cover;
+    background-position: 75% 10%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    border: 3px solid #0C0F11;
+    margin: auto;
+    position: relative;
+}
+.projects-container .projects .project-container .project6:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+.projects-container .projects.animate .project-container.seven{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container.seven{
+    transform: translateY(200%);
+    opacity: 0;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container .project7{
+    background-image: url('../images/projects/texbox.png');
+    background-size: cover;
+    background-position: 75% 15%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    border: 3px solid #0C0F11;
+    margin: auto;
+    position: relative;
+}
+.projects-container .projects .project-container .project7:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+.projects-container .projects.animate .project-container.eight{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container.eight{
+    transform: translateX(200%);
+    opacity: 0;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container .project8{
+    background-image: url('../images/projects/fresh-heim.jpg');
+    background-size: cover;
+    background-position: 75% 60%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    border: 3px solid #0C0F11;
+    height: 92%;
+    width: 97.5%;
+    margin: auto;
+    position: relative;
+}
+.projects-container .projects .project-container .project8:hover{
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
 }
@@ -199,6 +299,19 @@
     width: 200px;
     top: 51%;
     right: 6%;
+    
+}
+.projects-container .projects .project-container .speech-bubble.medium3 img{
+    width: 250px;
+    position: absolute;
+    top: 60%;
+    right: 0%;
+}
+.projects-container .projects .project-container .speech-bubble.medium3 span{
+    position: absolute;
+    width: 150px;
+    top: 75%;
+    right: 10%;
     
 }
 .projects-container .projects .project-container .speech-bubble.large img{
@@ -246,7 +359,7 @@
     .projects-container .projects .project-container .speech-bubble.medium span{
         position: absolute;
         top: 20%;
-        left: 8%;
+        left: 11%;
         font-size: 15px;
         
     }
@@ -262,6 +375,19 @@
         top: 50%;
         right: 0%;
         font-size: 15px;
+    }
+    .projects-container .projects .project-container .speech-bubble.medium3 img{
+        width: 225px;
+        position: absolute;
+        top: 65%;
+        right: 0%;
+    }
+    .projects-container .projects .project-container .speech-bubble.medium3 span{
+        position: absolute;
+        width: 150px;
+        top: 78%;
+        right: 12%;
+        
     }
     .projects-container .projects .project-container .speech-bubble.large img{
         width: 200px;
@@ -321,7 +447,7 @@
       .projects-container .projects{
         gap: 10px;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 150px);
+        grid-template-rows: repeat(4, 150px);
     }
     
     .projects-container .header{
@@ -355,6 +481,29 @@
         width: 95%;
         height: 90%;
     }
+    .projects-container .projects .project-container .project5{
+        border: 1.5px solid #0C0F11;
+        width: 90%;
+        height: 95%;
+    }
+    .projects-container .projects .project-container .project6{
+        border: 1.5px solid #0C0F11;
+        width: 90%;
+        height: 90%;
+    }
+    .projects-container .projects .project-container .project7{
+        border: 1.5px solid #0C0F11;
+        width: 90%;
+        height: 90%;
+    }
+    .projects-container .projects .project-container .project8{
+        border: 1.5px solid #0C0F11;
+        width: 95%;
+        height: 90%;
+    }
+    .projects-container .projects .project-container .speech-bubble span{
+        font-size: 7px!important;
+    }
     .projects-container .projects .project-container .speech-bubble.medium img{
         width: 80px;
         position: absolute;
@@ -364,7 +513,6 @@
         position: absolute;
         top: 22%;
         left: 15%;
-        font-size: 8px;
     }
     .projects-container .projects .project-container .speech-bubble.medium2 img{
         width: 110px;
@@ -377,7 +525,19 @@
         width: 85px;
         top: 40%;
         right: 8%;
-        font-size: 8px;
+    }
+    .projects-container .projects .project-container .speech-bubble.medium3 img{
+        width: 85px;
+        position: absolute;
+        top: 65%;
+        right: 0%;
+    }
+    .projects-container .projects .project-container .speech-bubble.medium3 span{
+        position: absolute;
+        width: 70px;
+        top: 75%;
+        right: 10%;
+        
     }
     .projects-container .projects .project-container .speech-bubble.large img{
         width: 90px;
@@ -390,7 +550,6 @@
         width: 75px;
         top: 44%;
         left: 18%;
-        font-size: 8px;
     }
     .projects-container .projects .project-container .speech-bubble.large2 img{
         width: 140px;
@@ -403,7 +562,6 @@
         width: 85px;
         top: 43%;
         right: 16%;
-        font-size: 8px;
     }
 }
 @keyframes borderAni{

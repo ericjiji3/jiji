@@ -4,6 +4,9 @@ import p1Pic from "./images/p1pic.png";
 import linkedIn from "./images/icons/linkedIn.png";
 import twitter from "./images/icons/twitter.png";
 import github from "./images/icons/github.png";
+import ig from "./images/icons/ig.png";
+import linktree from "./images/icons/linktree.png";
+import twitch from "./images/icons/twitch.png";
 import { Parallax} from 'react-scroll-parallax';
 import { Link} from 'react-scroll';
 import { useState, useEffect } from 'react';
@@ -38,7 +41,7 @@ function Home({reference, click}) {
             <div className="column1">
                 <Parallax translateX={['0vw', '-25vw']} opacity={[1,0]} startScroll={0} endScroll={1000}>
                 <div className="heading">
-                    <h3 className="name">ERIC JI</h3>
+                    <h3 className="name">JIJI</h3>
                     <h2 className="job">WEB DEVELOPER</h2>
                     <h3 className="job-description">Helping people turn their ideas and businesses into cool websites that work.</h3>
                 </div>
@@ -55,7 +58,9 @@ function Home({reference, click}) {
                 </Parallax>
                 <Parallax translateX={['0vw', '-25vw']} opacity={[1,0]} startScroll={0} endScroll={1000}>
                 <div className="socials">
-                    <a className="twitter" href="https://twitter.com/dj_ji3"  rel="noreferrer"><img src={twitter} alt="oops"/></a>
+                    <a className="ig" href="https://www.instagram.com/jiji.web/"  rel="noreferrer"><img src={ig} alt="oops"/></a>
+                    <a className="twitch" href="https://www.twitch.tv/dj_ji3" target="_blank" rel="noreferrer"><img src={twitch} alt="oops"/></a>
+                    <a className="linktree" href="https://linktr.ee/jijiweb" target="_blank" rel="noreferrer"><img src={linktree} alt="oops"/></a>
                     <a className="github" href="https://github.com/ericjiji3" target="_blank" rel="noreferrer"><img src={github} alt="oops"/></a>
                     <a className="linkedin" href="https://www.linkedin.com/in/eric-ji-b96775192/" target="_blank" rel="noreferrer"><img src={linkedIn} alt="oops"/></a>
                 </div>

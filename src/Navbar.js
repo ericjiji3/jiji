@@ -1,12 +1,12 @@
 import './styles/Navbar.css';
 import React, {useEffect, useState} from 'react';
-import initials from './images/initials.png';
+import logo from './images/logo.png';
 
 function Navbar() {
     return (
         <div className="navbar-container">
             <div className="initials-container">
-                <img src={initials}/>
+                <img src={logo}/>
             </div>
             <div className="tab-container">
                 <ul className="tabs">
