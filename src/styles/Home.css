@@ -263,10 +263,10 @@
         padding: 0 5px 0 0;
     }
     .home-container .column1 .socials a img{
-        width: 15px;
+        width: 17.5px;
     }
     .home-container .column1 .socials .twitch img{
-        width: 12.5px;
+        width: 15px;
     }
 }
 @keyframes slideLeft{
