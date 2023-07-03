@@ -31,7 +31,7 @@ function Projects({reference, onClick}) {
             <div className="projects-container" ref={reference}>
                 <h2 className={isVisible ? 'header animate' : 'header'} >Work</h2>
                 <div className={isVisible ? 'projects animate' : 'projects'} ref={containerRef}> 
-                    <a className="project-container one grid-col-1" href="https://www.jordon-inrwav.com/" target="_blank" rel="noreferrer">
+                    <a className="project-container one grid-col-1" href="https://jordonalva.com/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project1">
                         <div className="speech-bubble medium">
@@ -85,7 +85,7 @@ function Projects({reference, onClick}) {
                         </div>
                     </a>
 
-                    <a className="project-container five grid-row-2" href="https://studiomid22.netlify.app/" target="_blank" rel="noreferrer">
+                    <a className="project-container five grid-row-2" href="https://mid22.com/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project5">
                         <div className="speech-bubble medium3">
