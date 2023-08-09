@@ -27,7 +27,6 @@ function Contact({reference, onClick}) {
     function validateFields(data){
         var validate = true;
         Object.keys(data).forEach(function(field, index){
-            console.log(data[field])
             if(field === 'email'){
                 var email = data[field];
                 email.toLowerCase();
