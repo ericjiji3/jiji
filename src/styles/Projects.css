@@ -214,7 +214,8 @@
     transition: all 1.25s ease;
 }
 .projects-container .projects .project-container .project6{
-    background-image: url('../images/projects/scord.jpeg');
+    background-image: url('../images/projects/g4boyz.jpg');
+    background-color: blue;
     background-size: cover;
     background-position: 75% 10%;
     -webkit-filter: grayscale(100%); 
@@ -238,7 +239,7 @@
     transition: all 1.25s ease;
 }
 .projects-container .projects .project-container .project7{
-    background-image: url('../images/projects/texbox.png');
+    background-image: url('../images/projects/dash.jpg');
     background-size: cover;
     background-position: 75% 15%;
     -webkit-filter: grayscale(100%); 
@@ -277,6 +278,16 @@
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
 }
+.projects-container .projects .project-container .speech-bubble.small img{
+    width: 125px;
+    position: absolute;
+    left: 0%;
+}
+.projects-container .projects .project-container .speech-bubble.small span{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
 .projects-container .projects .project-container .speech-bubble.medium img{
     width: 180px;
     position: absolute;
@@ -304,8 +315,20 @@
 .projects-container .projects .project-container .speech-bubble.medium3 img{
     width: 250px;
     position: absolute;
-    top: 60%;
+    top: 55%;
     right: 0%;
+}
+.projects-container .projects .project-container .speech-bubble.medium4 span{
+    position: absolute;
+    width: 150px;
+    top: 70%;
+    left: 0%;
+}
+.projects-container .projects .project-container .speech-bubble.medium4 img{
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
 }
 .projects-container .projects .project-container .speech-bubble.medium3 span{
     position: absolute;
@@ -538,6 +561,18 @@
         top: 75%;
         right: 10%;
         
+    }
+    .projects-container .projects .project-container .speech-bubble.medium4 span{
+        position: absolute;
+        width: 150px;
+        top: 70%;
+        left: -37%;
+    }
+    .projects-container .projects .project-container .speech-bubble.medium4 img{
+        width: 75px;
+        position: absolute;
+        top: 50%;
+        left: 0%;
     }
     .projects-container .projects .project-container .speech-bubble.large img{
         width: 90px;

@@ -14,7 +14,7 @@ function Projects({reference, onClick}) {
         
         const observer = new IntersectionObserver(callbackFunction, {
             root: null,
-            rootMargin: '5px',
+            rootMargin: '250px',
             threshold: .35
         })
         const observedWork = containerRef.current;
@@ -97,25 +97,25 @@ function Projects({reference, onClick}) {
                         </div>
                     </a>
 
-                    <a className="project-container six grid-col-1" href="https://www.scord.app/" target="_blank" rel="noreferrer">
+                    <a className="project-container six grid-col-1" href="https://choplifetour.com/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project6">
-                        <div className="speech-bubble medium">
+                        <div className="speech-bubble medium4">
                             <img src={speech} alt="oops"/>
                             <span>
-                                Scord
+                                G4BOYZ
                             </span>
                         </div>
                         </div>
                     </a>
 
-                    <a className="project-container seven grid-col-1" href="https://ericji3333.wixsite.com/texbox-llc" target="_blank" rel="noreferrer">
+                    <a className="project-container seven grid-col-1" href="https://looseskrew.netlify.app/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project7">
-                        <div className="speech-bubble medium2">
+                        <div className="speech-bubble small">
                             <img src={speech} alt="oops"/>
                             <span>
-                                Texbox
+                                DA$H
                             </span>
                         </div>
                         </div>
