@@ -14,7 +14,7 @@ function Projects({reference, onClick}) {
         
         const observer = new IntersectionObserver(callbackFunction, {
             root: null,
-            rootMargin: '200px 0px 200px 0px',
+            rootMargin: '150px 0px 200px 0px',
             threshold: .35
         })
         const observedWork = containerRef.current;
