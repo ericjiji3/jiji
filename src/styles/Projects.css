@@ -35,7 +35,7 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-rows: repeat(5, 300px);
     width: 100%;
     padding-bottom: 60px;
 
@@ -64,9 +64,10 @@
     color: unset;
 
 }
-.projects-container .projects .project-container.grid-col-1{
+.projects-container .projects .project-container.grid-col-3{
     /* grid-column-start: 1;
     grid-column-end: span 2; */
+   
 }
 .projects-container .projects .project-container.grid-row-2{
     grid-row: span 2;
@@ -263,9 +264,9 @@
     transition: all 1.25s ease;
 }
 .projects-container .projects .project-container .project8{
-    background-image: url('../images/projects/fresh-heim.jpg');
+    background-image: url('../images/projects/deAnima.jpg');
     background-size: cover;
-    background-position: 75% 60%;
+    background-position: 80% 20%;
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
     border: 3px solid #0C0F11;
@@ -275,6 +276,58 @@
     position: relative;
 }
 .projects-container .projects .project-container .project8:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+.projects-container .projects.animate .project-container.nine{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container.nine{
+    transform: translateX(-150%);
+    opacity: 0;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container .project9{
+    background-image: url('../images/projects/sweetchurro.jpg');
+    background-size: cover;
+    background-position: 75% 75%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    border: 3px solid #0C0F11;
+    height: 92%;
+    width: 97.5%;
+    margin: auto;
+    position: relative;
+}
+.projects-container .projects .project-container .project9:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+.projects-container .projects.animate .project-container.ten{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container.ten{
+    transform: translateY(150%);
+    opacity: 0;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container .project10{
+    background-image: url('../images/projects/lmww.jpg');
+    background-size: cover;
+    background-position: 75% 45%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    border: 3px solid #0C0F11;
+    height: 92%;
+    width: 97.5%;
+    margin: auto;
+    position: relative;
+}
+.projects-container .projects .project-container .project10:hover{
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
 }
@@ -363,7 +416,32 @@
     right: 25%;
     
 }
-
+.projects-container .projects .project-container .speech-bubble.large3 img{
+    width: 250px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.projects-container .projects .project-container .speech-bubble.large3 span{
+    position: absolute;
+    width: 150px;
+    top: 40%;
+    left: 25%;
+    
+}
+.projects-container .projects .project-container .speech-bubble.large4 img{
+    width: 250px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.projects-container .projects .project-container .speech-bubble.large4 span{
+    position: absolute;
+    width: 150px;
+    top: 40%;
+    left: 30%;
+    
+}
 @media(max-width: 1400px){
     .projects-container{
         padding: 75px 150px;
@@ -441,7 +519,32 @@
         right: 24%;
         font-size: 15px;
     }
-    
+    .projects-container .projects .project-container .speech-bubble.large3 img{
+        width: 250px;
+        position: absolute;
+        top: 10%;
+        left: 20%;
+    }
+    .projects-container .projects .project-container .speech-bubble.large3 span{
+        position: absolute;
+        width: 150px;
+        top: 40%;
+        left: 30%;
+        
+    }
+    .projects-container .projects .project-container .speech-bubble.large4 img{
+        width: 150px;
+        position: absolute;
+        top: 10%;
+        left: 20%;
+    }
+    .projects-container .projects .project-container .speech-bubble.large4 span{
+        position: absolute;
+        width: 100px;
+        top: 25%;
+        left: 27.5%;
+        
+    }
 
 }
 @media(max-width: 1200px){
@@ -475,7 +578,7 @@
       .projects-container .projects{
         gap: 10px;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 150px);
+        grid-template-rows: repeat(5, 150px);
     }
     
     .projects-container .header{
@@ -529,7 +632,16 @@
         width: 95%;
         height: 90%;
     }
-    
+    .projects-container .projects .project-container .project9{
+        border: 1.5px solid #0C0F11;
+        width: 90%;
+        height: 90%;
+    }
+    .projects-container .projects .project-container .project10{
+        border: 1.5px solid #0C0F11;
+        width: 95%;
+        height: 90%;
+    }
     .projects-container .projects .project-container .speech-bubble span{
         font-size: 7px!important;
     }
@@ -613,6 +725,32 @@
         width: 85px;
         top: 43%;
         right: 16%;
+    }
+    .projects-container .projects .project-container .speech-bubble.large3 img{
+        width: 100px;
+        position: absolute;
+        top: 10%;
+        left: 20%;
+    }
+    .projects-container .projects .project-container .speech-bubble.large3 span{
+        position: absolute;
+        width: 70px;
+        top: 32.5%;
+        left: 27.5%;
+        
+    }
+    .projects-container .projects .project-container .speech-bubble.large4 img{
+        width: 90px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+    .projects-container .projects .project-container .speech-bubble.large4 span{
+        position: absolute;
+        width: 50px;
+        top: 30%;
+        left: 27.5%;
+        
     }
 }
 @keyframes borderAni{

@@ -121,18 +121,41 @@ function Projects({reference, onClick}) {
                         </div>
                     </a>
 
-                    <a className="project-container eight grid-col-2" href="https://ericji3333.wixsite.com/fresh-heim" target="_blank" rel="noreferrer">
+                    <a className="project-container eight grid-col-2" href="https://deanima.netlify.app/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project8">
                         <div className="speech-bubble large2">
                             <img src={speech} alt="oops"/>
                             <span>
-                                Fresh Heim
+                                De Anima
                             </span>
                         </div>
                         </div>
                     </a>
 
+                    <a className="project-container nine grid-col-1" href="https://sweet-churro.com/" target="_blank" rel="noreferrer">
+                        <span className="border-animate"></span>
+                        <div className="project9">
+                        <div className="speech-bubble large4">
+                            <img src={speech} alt="oops"/>
+                            <span>
+                                Sweet Churro
+                            </span>
+                        </div>
+                        </div>
+                    </a>
+
+                    <a className="project-container ten grid-col-2" href="https://lasmuchachosworldwide.com/" target="_blank" rel="noreferrer">
+                        <span className="border-animate"></span>
+                        <div className="project10">
+                        <div className="speech-bubble large3">
+                            <img src={speech} alt="oops"/>
+                            <span>
+                                Las Muchachos
+                            </span>
+                        </div>
+                        </div>
+                    </a>
 
                     
                 </div>
