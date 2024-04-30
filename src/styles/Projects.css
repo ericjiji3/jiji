@@ -463,7 +463,7 @@
     .projects-container .projects .project-container .speech-bubble.medium span{
         position: absolute;
         top: 20%;
-        left: 11%;
+        left: 8%;
         font-size: 15px;
         
     }
@@ -516,7 +516,7 @@
         position: absolute;
         width: 150px;
         top: 35%;
-        right: 27%;
+        right: 24%;
         font-size: 15px;
     }
     .projects-container .projects .project-container .speech-bubble.large3 img{
@@ -529,7 +529,7 @@
         position: absolute;
         width: 150px;
         top: 40%;
-        left: 30%;
+        left: 27%;
         
     }
     .projects-container .projects .project-container .speech-bubble.large4 img{
@@ -675,7 +675,7 @@
         position: absolute;
         width: 85px;
         top: 40%;
-        right: 8%;
+        right: 1%;
     }
     .projects-container .projects .project-container .speech-bubble.medium3 img{
         width: 100px;

@@ -112,7 +112,7 @@ function Projects({reference, onClick}) {
                     <a className="project-container seven grid-col-1" href="https://deanima.netlify.app/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project7">
-                        <div className="speech-bubble large2">
+                        <div className="speech-bubble medium">
                             <img src={speech} alt="oops"/>
                             <span>
                                 De Anima
@@ -124,7 +124,7 @@ function Projects({reference, onClick}) {
                     <a className="project-container eight grid-col-2" href="https://demmocorp.com/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project8">
-                        <div className="speech-bubble large2">
+                        <div className="speech-bubble medium2">
                             <img src={speech} alt="oops"/>
                             <span>
                                 Demmo
