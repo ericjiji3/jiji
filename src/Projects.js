@@ -109,25 +109,25 @@ function Projects({reference, onClick}) {
                         </div>
                     </a>
 
-                    <a className="project-container seven grid-col-1" href="https://looseskrew.netlify.app/" target="_blank" rel="noreferrer">
+                    <a className="project-container seven grid-col-1" href="https://deanima.netlify.app/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project7">
-                        <div className="speech-bubble small">
+                        <div className="speech-bubble large2">
                             <img src={speech} alt="oops"/>
                             <span>
-                                DA$H
+                                De Anima
                             </span>
                         </div>
                         </div>
                     </a>
 
-                    <a className="project-container eight grid-col-2" href="https://deanima.netlify.app/" target="_blank" rel="noreferrer">
+                    <a className="project-container eight grid-col-2" href="https://demmocorp.com/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project8">
                         <div className="speech-bubble large2">
                             <img src={speech} alt="oops"/>
                             <span>
-                                De Anima
+                                Demmo
                             </span>
                         </div>
                         </div>
