@@ -8,6 +8,9 @@ import Contact from './Contact.js';
 import initials from './images/logo.png';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import { Link } from 'react-scroll';
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-X35Q1VFK38');
 
 function App() {
   const home = useRef(null);
