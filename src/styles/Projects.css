@@ -713,6 +713,30 @@
         top: 10%;
         right: -5%;
     }
+    .projects-container .projects .project-container.two .speech-bubble.medium2 img{
+        width: 75px;
+        position: absolute;
+        top: 10%;
+        right: -5%;
+    }
+    .projects-container .projects .project-container.nine .speech-bubble.medium2 img{
+        width: 100px;
+        position: absolute;
+        top: 35%;
+        right: -5%;
+    }
+    .projects-container .projects .project-container.two .speech-bubble.medium2 span{
+        position: absolute;
+        width: 65px;
+        top: 31%;
+        right: 1%;
+    }
+    .projects-container .projects .project-container.nine .speech-bubble.medium2 span{
+        position: absolute;
+        width: 65px;
+        top: 65%;
+        right: 10%;
+    }
     .projects-container .projects .project-container .speech-bubble.medium2 span{
         position: absolute;
         width: 85px;
