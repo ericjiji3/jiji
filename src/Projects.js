@@ -43,13 +43,13 @@ function Projects({reference, onClick}) {
                         </div>
                     </a>
                     
-                    <a className="project-container two grid-col-1" href="https://southcloudramen.com/" target="_blank" rel="noreferrer">
+                    <a className="project-container two grid-col-1" href="https://8lab.netlify.app/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project2">
                             <div className="speech-bubble medium2">
                                 <img src={speech} alt="oops"/>
                                 <span>
-                                    SouthCloud Ramen
+                                    8Lab
                                 </span>
                             </div>
                             
@@ -58,13 +58,13 @@ function Projects({reference, onClick}) {
                 
                     
                     
-                    <a className="project-container three grid-row-2" href="https://www.360connect.com/" target="_blank" rel="noreferrer">
+                    <a className="project-container three grid-row-2" href="https://www.scalacomputing.com/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project3">
                             <div className="speech-bubble large">
                                 <img src={speech} alt="oops"/>
                                 <span>
-                                    360 Connect
+                                    Scala Computing
                                 </span>
                             </div>
                         </div>
@@ -133,13 +133,13 @@ function Projects({reference, onClick}) {
                         </div>
                     </a>
 
-                    <a className="project-container nine grid-col-1" href="https://sweet-churro.com/" target="_blank" rel="noreferrer">
+                    <a className="project-container nine grid-col-1" href="https://nutrifaye.com/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project9">
-                        <div className="speech-bubble large4">
+                        <div className="speech-bubble medium2">
                             <img src={speech} alt="oops"/>
                             <span>
-                                Sweet Churro
+                                Nutrifaye
                             </span>
                         </div>
                         </div>
@@ -157,7 +157,7 @@ function Projects({reference, onClick}) {
                         </div>
                     </a>
 
-                    
+          
                 </div>
                 
             </div>

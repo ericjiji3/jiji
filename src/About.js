@@ -39,7 +39,7 @@ function About({reference, onClick}) {
                 <div className={isVisible ? 'bio animate' : 'bio'}>
                     <h2>About Me</h2>
                     <p>
-                    I am a 23 year old web developer based in Austin, Texas. I was raised in houston, texas, and ended up going to school at the university of texas at austin. I graduated in 2021, and have been developing websites in Austin ever since. In my free time, I play video games (like Valorant and Minecraft), and break (my) ankles on the basketball court. Oh, and I also really enjoy making websites ! Whether it's for a business or an individual, helping people make their dream or idea into a reality is something I take pride in. Lets make something cool together !
+                    I am a 25 year old web developer based in Brooklyn. I was raised in houston, texas, and went to school at the university of texas at austin. I graduated in 2021, and have been developing websites ever since. In my free time, I play video games (like Minecraft), and break (my) ankles on the basketball court. Oh, and I also really enjoy making websites ! Whether it's for a business or an individual, helping people make their dream or idea into a reality is something I take pride in. Lets make something cool together !
                     </p>
                 </div>
                 <div className="stars"></div>

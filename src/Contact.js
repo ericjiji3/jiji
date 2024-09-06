@@ -167,7 +167,7 @@ function Contact({reference, onClick}) {
                     </a>
                     <div className="map-container">
                         <img src={map} alt="oops"/>
-                        <span>Austin, TX</span>
+                        <span>Brooklyn, NY</span>
                     </div>
                     <a href="mailto: jijiji.web@gmail.com" className="mail-container">
                         <img src={mail} alt="oops"/>

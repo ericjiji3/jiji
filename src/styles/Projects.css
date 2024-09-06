@@ -115,16 +115,32 @@
     transition: all 1.25s ease;
 }
 .projects-container .projects .project-container .project2{
-    background-image: url('../images/projects/southcloud.jpg');
+    background-image: url('../images/projects/8lab.jpg');
     background-size: cover;
     background-position: 75% 50%;
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+    -webkit-filter: invert(100%); 
+    filter: invert(100%);
     border: 3px solid #0C0F11;
 }
 .projects-container .projects .project-container .project2:hover{
-    -webkit-filter: grayscale(0%); 
-    filter: grayscale(0%);
+    -webkit-filter: invert(0%); 
+    filter: invert(0%);
+}
+.projects-container .projects .project-container .project2 img{
+    -webkit-filter: invert(100%); 
+    filter: invert(100%);
+}
+.projects-container .projects .project-container .project2 span{
+    -webkit-filter: invert(100%); 
+    filter: invert(100%);
+}
+.projects-container .projects .project-container .project2:hover img{
+    -webkit-filter: invert(0%); 
+    filter: invert(0%);
+}
+.projects-container .projects .project-container .project2:hover span{
+    -webkit-filter: invert(0%); 
+    filter: invert(0%);
 }
 .projects-container .projects.animate .project-container.three{
     transform: translateX(0%);
@@ -137,7 +153,7 @@
     transition: all 1.25s ease;
 }
 .projects-container .projects .project-container .project3{
-    background-image: url('../images/projects/360connect.jpg');
+    background-image: url('../images/projects/scalimg.jpg');
     background-size: cover;
     background-position: 75% 50%;
     -webkit-filter: grayscale(100%); 
@@ -290,14 +306,14 @@
     transition: all 1.25s ease;
 }
 .projects-container .projects .project-container .project9{
-    background-image: url('../images/projects/sweetchurro.jpg');
+    background-image: url('../images/projects/nutrifaye.jpg');
     background-size: cover;
-    background-position: 75% 75%;
+    background-position: 0% 0%;
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
     border: 3px solid #0C0F11;
-    height: 92%;
-    width: 97.5%;
+    height: 90%;
+    width: 95%;
     margin: auto;
     position: relative;
 }
@@ -328,6 +344,32 @@
     position: relative;
 }
 .projects-container .projects .project-container .project10:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+.projects-container .projects.animate .project-container.eleven{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container.eleven{
+    transform: translateY(200%);
+    opacity: 0;
+    transition: all 1.25s ease;
+}
+.projects-container .projects .project-container .project11{
+    background-image: url('../images/projects/southcloud.jpg');
+    background-size: cover;
+    background-position: 50%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    border: 3px solid #0C0F11;
+    height: 90%;
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+.projects-container .projects .project-container .project11:hover{
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
 }
