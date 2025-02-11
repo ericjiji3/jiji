@@ -43,7 +43,7 @@ function Projects({reference, onClick}) {
                         </div>
                     </a>
                     
-                    <a className="project-container two grid-col-1" href="https://8lab.netlify.app/" target="_blank" rel="noreferrer">
+                    <a className="project-container two grid-col-1" href="https://8labs.netlify.app/" target="_blank" rel="noreferrer">
                         <span className="border-animate"></span>
                         <div className="project2">
                             <div className="speech-bubble medium2">
@@ -157,7 +157,41 @@ function Projects({reference, onClick}) {
                         </div>
                     </a>
 
-          
+                    <a className="project-container one grid-col-1" href="https://kizzykalu.com/" target="_blank" rel="noreferrer">
+                        <span className="border-animate"></span>
+                        <div className="project1 kizzy">
+                        <div className="speech-bubble large4">
+                            <img src={speech} alt="oops"/>
+                            <span>
+                                Kizzy <br/>Kalu
+                            </span>
+                        </div>
+                        </div>
+                    </a>
+                    
+                    <a className="project-container two grid-col-1" href="https://morrellboxing.com/" target="_blank" rel="noreferrer">
+                        <span className="border-animate"></span>
+                        <div className="project2 david">
+                            <div className="speech-bubble medium2">
+                                <img src={speech} alt="oops"/>
+                                <span>
+                                David <br/>Morrell Jr.
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    <a className="project-container seven grid-col-1" href="https://kplogistics.llc/" target="_blank" rel="noreferrer">
+                        <span className="border-animate"></span>
+                        <div className="project7 kp">
+                        <div className="speech-bubble large4">
+                            <img src={speech} alt="oops"/>
+                            <span>
+                                KP Logistics
+                            </span>
+                        </div>
+                        </div>
+                    </a>
                 </div>
                 
             </div>

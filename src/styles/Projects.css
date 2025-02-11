@@ -35,7 +35,7 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 300px);
+    grid-template-rows: repeat(6, 300px);
     width: 100%;
     padding-bottom: 60px;
 
@@ -369,6 +369,16 @@
     margin: auto;
     position: relative;
 }
+.projects-container .projects .project-container .david{
+    background-image: url('../images/projects/morrel.jpg');
+    
+}
+.projects-container .projects .project-container .kp{
+    background-image: url('../images/projects/kplog.png');
+}
+.projects-container .projects .project-container .kizzy{
+    background-image: url('../images/projects/kizzy.jpg');
+}
 .projects-container .projects .project-container .project11:hover{
     -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
@@ -403,8 +413,8 @@
 .projects-container .projects .project-container .speech-bubble.medium2 span{
     position: absolute;
     width: 200px;
-    top: 51%;
-    right: 6%;
+    top: 52%;
+    right: 30px;
     
 }
 .projects-container .projects .project-container .speech-bubble.medium3 img{
