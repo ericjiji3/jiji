@@ -630,7 +630,7 @@
       .projects-container .projects{
         gap: 10px;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 150px);
+        grid-template-rows: repeat(6, 150px);
     }
     
     .projects-container .header{
